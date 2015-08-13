@@ -1,0 +1,492 @@
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body,
+button,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /*font-family: "Lato","Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-weight: 700;*/
+  font-family: "Open Sans";
+  font-weight: 300;
+}
+
+.no-margin {
+  margin: 0;
+}
+
+.no-padding {
+  padding: 0;
+}
+
+.upper {
+  text-transform: uppercase;
+}
+
+.titulo {
+  color: #343f79;
+  text-transform: uppercase;
+  font-size: 50px;
+  letter-spacing: 0.2em; 
+}
+
+.sub-titulo {
+  color: #343f79;
+  font-style: italic;
+  margin-top: -15px;
+}
+
+.semibold {
+  font-weight: 600;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.inner {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.pagina-inicial {
+  text-align: center;
+  color: #f8f8f8;
+  padding-bottom: 20px;
+}
+
+.pagina-inicial-inner {
+  position: relative;
+  padding-top: 100px;
+  padding-bottom: 50px;
+}
+
+#pagina-inicial #pagina-inicial-slider {
+  position: absolute;
+  top: 0px;
+  width: 100%; 
+}
+
+#pagina-inicial #pagina-inicial-slider .carousel-indicators .active {
+  background-color: #0064a2;
+  border-color: #0064a2;
+}
+
+#pagina-inicial #pagina-inicial-slider .carousel-inner {
+  height: 560px;
+}
+
+#pagina-inicial #pagina-inicial-slider .carousel-indicators {
+  bottom: 40px;
+}
+
+#pagina-inicial #pagina-inicial-slider .item {
+  height: 100%;
+}
+
+#pagina-inicial #pagina-inicial-slider .fill {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  -webkit-background-size: cover;
+     -moz-background-size: cover;
+       -o-background-size: cover;
+          background-size: cover;
+}
+
+.pagina-inicial-lead {
+  position: relative;
+  left: 0;
+  right: 0;
+
+  display: flex;
+  width: 790px;
+  margin: 0 auto;
+}
+
+.pagina-inicial-lead .intro-logo {
+  background: url(../img/intro-logo.png) no-repeat center center;
+  background-size: cover;
+  height: 215px;
+  width: 155px;
+  margin-top: 15px;
+}
+
+.pagina-inicial-lead .lead {
+  padding-left: 60px;
+  text-align: left;
+}
+
+.pagina-inicial-lead p {
+  line-height: 59.65px;
+  font-size: 42.56px;
+  text-transform: uppercase;
+}
+
+.btn-persona {
+  border-radius: 25px;
+  border-color: #fff;
+  background-color: transparent;
+  color: #fff;
+  font-size: 15px;
+  padding: 8px 20px;
+}
+
+.btn-persona:hover, .btn-persona:active {
+  background-color: #fff;
+}
+
+.btn-persona:hover, .btn-persona:active {
+  background-color: #fff;
+}
+
+.btn-persona.btn-persona-inverse {
+  border-color: #0064a2;
+  color: #0064a2;
+}
+
+.btn-persona.btn-persona-inverse:hover,
+.btn-persona.btn-persona-inverse:active {
+  background-color: #0064a2;
+  color: #fff;
+}
+
+#intro-button {
+  margin-top: 35px;
+}
+
+.navbar-persona { 
+  border: none;
+  height: 60px;
+  font-size: 11px;
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.navbar-persona .navbar-nav {
+  background-color: #24168f;
+  opacity: 0.87;
+}
+
+.navbar-persona .navbar-nav {
+  width: 100%;
+}
+
+.navbar-persona .navbar-nav li {
+  float: none;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.navbar-persona .navbar-nav a {
+  color: #fff;
+  line-height: 30px;
+  letter-spacing: 0.30em; 
+}
+
+.navbar-persona .navbar-nav a:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+#slider {
+  margin-top: 70px;
+  padding-bottom: 40px;
+}
+
+#quem-somos .chamada {
+  height: 290px;
+  background: url(../img/quem-somos-bg.png) no-repeat center center;
+  background-size: cover;
+  background-position-y: -85px;
+  text-align: center;
+}
+
+#quem-somos .chamada .titulo {
+  padding-top: 70px;
+}
+
+.quem-somos .texto {
+  font-size: 14px;
+  font-weight: bolder;
+  line-height: 30px;
+}
+
+.quem-somos #descricao-esquerda {
+  padding-top: 30px;
+  border-top-style: solid;
+  border-top-width: 3px;
+  border-top-color: #343f79;
+}
+
+.quem-somos #descricao-direita {
+  padding-top: 40px;
+}
+
+.quem-somos #descricao-direita .item {
+  border: 1px solid #d1d1d1;
+  padding: 20px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.quem-somos #descricao-direita .item:last-of-type {
+  margin-bottom: 40px;
+}
+
+.quem-somos #descricao-direita .item-titulo {
+  color: #343f79;
+}
+
+.quem-somos #descricao-direita .item-texto {
+  line-height: normal;
+}
+
+#o-que-fazemos {
+  display: inline-block;
+}
+
+#o-que-fazemos .btn-persona-inverse {
+  margin: 40px auto;
+}
+
+#o-que-fazemos .chamada {
+  height: 430px;
+  background: url(../img/o-que-fazemos-bg.png) no-repeat center center;
+  background-size: cover;
+  background-position-y: 0;
+}
+
+#o-que-fazemos .chamada .titulo {
+  padding-top: 50px;
+}
+
+#o-que-fazemos .o-que-fazemos .solucoes-logo {
+  background-color: #0064a2;
+  box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.51);
+  height: 200px;
+  margin-top: -170px;
+}
+
+#o-que-fazemos .o-que-fazemos .solucoes-logo div {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  top: 42.5px;
+}
+
+#o-que-fazemos .o-que-fazemos .solucoes-logo #planejamento-estrategico {
+  background: url(../img/solucoes-planejamento-estrategico-bg.png) no-repeat center center;
+  background-size: cover;
+  height: 115px;
+  width: 115px;
+}
+
+#o-que-fazemos .o-que-fazemos .solucoes-logo #sem-nome-1 {
+  background: url(../img/solucoes-sem-nome-1-bg.png) no-repeat center center;
+  background-size: cover;
+  height: 115px;
+  width: 100px;
+}
+
+#o-que-fazemos .o-que-fazemos .solucoes-logo #sem-nome-2 {
+  background: url(../img/solucoes-sem-nome-2-bg.png) no-repeat center center;
+  background-size: cover;
+  height: 110px;
+  width: 140px;
+}
+
+#o-que-fazemos .o-que-fazemos .solucoes-logo #sem-nome-3 {
+  background: url(../img/solucoes-sem-nome-3-bg.png) no-repeat center center;
+  background-size: cover;
+  height: 118px;
+  width: 118px;
+}
+
+#o-que-fazemos .o-que-fazemos .bold {
+  margin: 20px 0 10px 0;
+}
+
+#o-que-fazemos .o-que-fazemos .texto {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e1e1e1;
+}
+/*
+#para-quem {
+  display: inline-block;
+}*/
+
+#para-quem .chamada {
+  height: 285px;
+  background: url(../img/para-quem-bg.png) no-repeat center center;
+  background-size: cover;
+  text-align: center;
+}
+
+#para-quem .chamada .titulo {
+  padding-top: 60px;
+}
+
+#para-quem #clientes {
+  padding-bottom: 30px;
+}
+
+#para-quem #clientes .row-fluid {
+  margin-top: 30px;
+  display: flex;
+}
+
+/*#para-quem #clientes .row-fluid:last-of-type {
+  margin-bottom: 30px;
+}
+*/
+#para-quem .clientes-logo {
+  width: 175px;
+  height: 175px;
+  margin: auto;
+}
+
+#para-quem #clientes #boca {
+  background: url(../img/clientes/boca.png) no-repeat center center;
+  background-size: cover;
+}
+
+#para-quem #clientes #transmar {
+  background: url(../img/clientes/transmar.png) no-repeat center center;
+  background-size: cover;
+}
+
+#para-quem #clientes #armazem-para {
+  background: url(../img/clientes/armazem-para.png) no-repeat center center;
+  background-size: cover;
+}
+
+#para-quem #clientes #posto-amigo {
+  background: url(../img/clientes/posto-amigo.png) no-repeat center center;
+  background-size: cover;
+}
+
+#para-quem #clientes #nordestao {
+  background: url(../img/clientes/nordestao.png) no-repeat center center;
+  background-size: cover;
+}
+
+#para-quem #clientes #aguia-telecom {
+  background: url(../img/clientes/aguia-telecom.png) no-repeat center center;
+  background-size: cover;
+}
+
+#para-quem #clientes #riachuelo {
+  background: url(../img/clientes/riachuelo.png) no-repeat center center;
+  background-size: cover;
+}
+
+#para-quem #clientes #cdr-natal {
+  background: url(../img/clientes/cdr-natal.png) no-repeat center center;
+  background-size: cover;
+}
+
+#para-quem #clientes #grupo-vila {
+  background: url(../img/clientes/grupo-vila.png) no-repeat center center;
+  background-size: cover;
+}
+
+#para-quem #clientes #super-show {
+  background: url(../img/clientes/super-show.png) no-repeat center center;
+  background-size: cover;
+}
+
+#para-quem #clientes #padaria-sao-miguel {
+  background: url(../img/clientes/padaria-sao-miguel.png) no-repeat center center;
+  background-size: cover;
+}
+
+#para-quem #clientes #casa-durval-paiva {
+  background: url(../img/clientes/casa-durval-paiva.png) no-repeat center center;
+  background-size: cover;
+}
+
+#para-quem #clientes #wt-distribuidora {
+  background: url(../img/clientes/wt-distribuidora.png) no-repeat center center;
+  background-size: cover;
+}
+
+#para-quem #clientes #bemis {
+  background: url(../img/clientes/bemis.png) no-repeat center center;
+  background-size: cover;
+}
+
+#para-quem #clientes #cebrac {
+  background: url(../img/clientes/cebrac.png) no-repeat center center;
+  background-size: cover;
+}
+
+#entre-em-contato .entre-em-contato-inner {
+  padding-top: 40px;
+}
+
+#entre-em-contato .titulo {
+  font-size: 30px;
+}
+
+#entre-em-contato blockquote {
+  border-left-color: #40349d;
+  font-size: 14px;
+}
+
+#entre-em-contato #contato form {
+  padding-top: 25px;
+}
+
+#entre-em-contato #nav-tabs-contato a {
+  color: #40349d;
+  border: 1px solid #e1e1e1;
+}
+
+#entre-em-contato #nav-tabs-contato .active a {
+  border-bottom: none;
+}
+
+#entre-em-contato #nav-tabs-contato li:not(:first-of-type) a {
+  border-left: none;
+}
+
+#entre-em-contato #nav-tabs-contato a,
+#entre-em-contato #contato input, textarea {
+  border-radius: 0;
+}
+
+#entre-em-contato #contato textarea {
+  resize: vertical;
+}
+
+#entre-em-contato .btn-persona-blue {
+  background-color: #0064a2;
+  border-radius: 0;
+}
+
+#entre-em-contato .btn-persona-blue:hover,
+#entre-em-contato .btn-persona-blue:active {
+  background-color: transparent;
+  border: 1px solid #0064a2;
+  color: #0064a2;
+}
+
+.copyright {
+  height: 80px;
+  line-height: 80px;
+  background-color: #000;
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}

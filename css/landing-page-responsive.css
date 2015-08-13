@@ -1,0 +1,70 @@
+@media (max-width: 1024px) {
+  .pagina-inicial-inner {
+    padding-top: 40px;
+  }
+
+  #pagina-inicial #pagina-inicial-slider .carousel-inner {
+    height: 480px;
+  }
+
+  .pagina-inicial {
+    padding-bottom: 0;
+  }
+
+  #pagina-inicial #pagina-inicial-slider .carousel-indicators {
+    bottom: 35px;
+  }
+}
+
+@media (max-width: 960px) {
+  .navbar-persona {
+    font-size: 9px;
+  }
+
+  .navbar-persona li > a {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  #entre-em-contato .titulo {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 769px) {
+  /*.navbar-persona li > a {
+    padding-left: 5px;
+    padding-right: 5px;
+  }*/
+  .navbar-persona {
+    font-size: 8px;
+  }
+
+  .pagina-inicial-lead {
+    left: 60px;
+  }
+
+  .pagina-inicial-inner .lead {
+    padding-left: 15px;
+  }
+
+  .pagina-inicial-inner .lead p {
+    line-height: 50.65px;
+    font-size: 35.56px;
+  }
+
+  #quem-somos .navbar-persona .navbar-nav {
+    /*margin-top: 10px;*/
+    /*margin-top: 45px;*/
+    margin-top: 36px;
+  }
+
+  .navbar-persona .navbar-nav {
+    margin: 0;
+  }
+
+  #nav-tabs-contato li {
+    width: 33%;
+    float: left;
+  }
+}
