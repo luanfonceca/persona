@@ -147,4 +147,17 @@
   #entre-em-contato #entre-em-contato-email {
     width: 100%;
   }
+
+  #o-que-fazemos .o-que-fazemos div {
+    width: 100%;
+  }
+
+  #o-que-fazemos .o-que-fazemos .col-md-3:first-child {
+    margin-top: -100px;
+  }
+
+  #o-que-fazemos .o-que-fazemos .col-md-3:first-child+.col-md-3,
+  #o-que-fazemos .o-que-fazemos .col-md-3 {
+    margin-top: 0;
+  }
 }
