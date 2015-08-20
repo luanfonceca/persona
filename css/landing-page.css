@@ -170,6 +170,7 @@ h6 {
   color: #fff;
   text-transform: uppercase;
   text-align: center;
+  z-index: 1;
 }
 
 .navbar-persona .navbar-nav {
@@ -341,15 +342,10 @@ h6 {
   padding-bottom: 30px;
 }
 
-#para-quem #clientes .row-fluid {
+#para-quem #clientes .row {
   margin-top: 30px;
-  display: flex;
 }
 
-/*#para-quem #clientes .row-fluid:last-of-type {
-  margin-bottom: 30px;
-}
-*/
 #para-quem .clientes-logo {
   width: 175px;
   height: 175px;

@@ -30,7 +30,6 @@
     font-size: 25px;
   }
 }
-
 @media (max-width: 769px) {
   /*.navbar-persona li > a {
     padding-left: 5px;
@@ -53,10 +52,12 @@
     font-size: 35.56px;
   }
 
+  .pagina-inicial {
+    padding-bottom: 30px;
+  }
+
   #quem-somos .navbar-persona .navbar-nav {
-    /*margin-top: 10px;*/
-    /*margin-top: 45px;*/
-    margin-top: 36px;
+    margin-top: 6px;
   }
 
   .navbar-persona .navbar-nav {
@@ -66,5 +67,24 @@
   #nav-tabs-contato li {
     width: 33%;
     float: left;
+  }
+
+  #quem-somos .chamada {
+    height: 390px;
+    background-position-y: 45px;
+  }
+
+  #quem-somos .chamada .titulo {
+    padding-top: 170px;
+  }
+
+  #para-quem #clientes .cliente {
+    margin-top: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .pagina-inicial {
+    padding-bottom: 40px;
   }
 }
