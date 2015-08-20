@@ -140,6 +140,15 @@
     line-height: 30px;
     font-size: 25px;
   }
+/*
+  #para-quem .chamada {
+    height: 350px;
+  }*/
+
+  #para-quem .chamada .titulo {
+    margin-top: 20px;
+    font-size: 40px;
+  }
 }
 
 @media (max-width: 460px) {
@@ -159,5 +168,20 @@
   #o-que-fazemos .o-que-fazemos .col-md-3:first-child+.col-md-3,
   #o-que-fazemos .o-que-fazemos .col-md-3 {
     margin-top: 0;
+  }
+ 
+  #para-quem .chamada .titulo {
+    margin-top: 20px;
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 320px) {
+  #para-quem .chamada {
+    height: 350px;
+  }
+  #para-quem .chamada .titulo {
+    margin-top: 50px;
+    font-size: 30px;
   }
 }
