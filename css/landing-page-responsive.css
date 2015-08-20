@@ -1,10 +1,10 @@
 @media (max-width: 1024px) {
-  .pagina-inicial-inner {
-    padding-top: 40px;
-  }
-
   #pagina-inicial #pagina-inicial-slider .carousel-inner {
     height: 480px;
+  }
+
+  .pagina-inicial-inner {
+    padding-top: 40px;
   }
 
   .pagina-inicial {
@@ -30,17 +30,30 @@
     font-size: 25px;
   }
 }
+
+@media (max-width: 850px) {
+  .pagina-inicial-lead {
+    padding-left: 20px;
+    top: 20px;
+  }
+
+  .pagina-inicial-lead .logo {
+    left: 2em;
+  }
+  
+  .pagina-inicial-inner .lead {
+    padding-left: 15px;
+  }
+
+}
+
 @media (max-width: 769px) {
-  /*.navbar-persona li > a {
-    padding-left: 5px;
-    padding-right: 5px;
-  }*/
   .navbar-persona {
     font-size: 8px;
   }
 
-  .pagina-inicial-lead {
-    left: 60px;
+  .pagina-inicial {
+    padding-bottom: 30px;
   }
 
   .pagina-inicial-inner .lead {
@@ -50,10 +63,6 @@
   .pagina-inicial-inner .lead p {
     line-height: 50.65px;
     font-size: 35.56px;
-  }
-
-  .pagina-inicial {
-    padding-bottom: 30px;
   }
 
   #quem-somos .navbar-persona .navbar-nav {
@@ -81,10 +90,61 @@
   #para-quem #clientes .cliente {
     margin-top: 30px;
   }
+
+  #o-que-fazemos .o-que-fazemos .solucoes-logo {
+    margin-top: 0;
+  }
+
+  #o-que-fazemos .o-que-fazemos .col-md-3:first-child,
+  #o-que-fazemos .o-que-fazemos .col-md-3:first-child+.col-md-3 {
+    margin-top: -170px;
+  }
 }
 
 @media (max-width: 767px) {
   .pagina-inicial {
     padding-bottom: 40px;
+  }
+
+  #o-que-fazemos .o-que-fazemos .col-md-3:first-child,
+  #o-que-fazemos .o-que-fazemos .col-md-3:first-child+.col-md-3 {
+    margin-top: -100px;
+  }
+
+  #o-que-fazemos ul {
+    padding-left: 20px;
+  }
+
+  #entre-em-contato ul {
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 680px) {
+  .pagina-inicial-lead .intro-logo {
+    margin-top: 0;
+  }
+
+  .pagina-inicial-inner .lead p {
+    font-size: 31px;
+  }
+
+  .pagina-inicial {
+      padding-bottom: 120px;
+  }
+}
+
+
+@media (max-width: 630px) {
+  .pagina-inicial-inner .lead p {
+    line-height: 30px;
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 460px) {
+  #entre-em-contato #entre-em-contato-fone,
+  #entre-em-contato #entre-em-contato-email {
+    width: 100%;
   }
 }

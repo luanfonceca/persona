@@ -106,7 +106,6 @@ h6 {
   position: relative;
   left: 0;
   right: 0;
-
   display: flex;
   width: 790px;
   margin: 0 auto;
@@ -175,7 +174,8 @@ h6 {
 
 .navbar-persona .navbar-nav {
   background-color: #24168f;
-  opacity: 0.87;
+  /*opacity: 0.87;*/
+  opacity: 0.3;
 }
 
 .navbar-persona .navbar-nav {
@@ -438,6 +438,14 @@ h6 {
 #entre-em-contato blockquote {
   border-left-color: #40349d;
   font-size: 14px;
+}
+
+#entre-em-contato #entre-em-contato-fone {
+  float: left;
+}
+
+#entre-em-contato #entre-em-contato-email {
+  float: right;
 }
 
 #entre-em-contato #contato form {
