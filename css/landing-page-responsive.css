@@ -146,6 +146,7 @@
 }
 
 @media (max-width: 630px) {
+  .pagina-inicial-inner .lead-small p,
   .pagina-inicial-inner .lead p {
     line-height: 30px;
     font-size: 25px;
@@ -162,6 +163,37 @@
   
   #quem-somos .chamada .titulo {
       padding-top: 100px;
+  }
+}
+
+@media (max-width: 540px) {
+  .pagina-inicial {
+    padding-bottom: 35px;
+  }
+
+  .pagina-inicial-lead {
+    padding-top: 0px;
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 155px;
+    padding-left: 0px;
+  }
+
+  .pagina-inicial-lead-small {
+    width: 100%;
+  }
+
+  .pagina-inicial-lead .lead {
+    display: none;
+  }
+
+  .pagina-inicial-lead .lead-small {
+    width: inherit;
+  }
+
+  #pagina-inicial #pagina-inicial-slider .carousel-inner {
+    height: 560px;
   }
 }
 

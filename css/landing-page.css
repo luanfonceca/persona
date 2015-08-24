@@ -102,6 +102,10 @@ h6 {
           background-size: cover;
 }
 
+.pagina-inicial-lead-small {
+  display: none;
+}
+
 .pagina-inicial-lead {
   position: relative;
   left: 0;
@@ -174,7 +178,7 @@ h6 {
 
 .navbar-persona .navbar-nav {
   background-color: #24168f;
-  opacity: 0.87;
+  opacity: 0.3;
 }
 
 .navbar-persona .navbar-nav {
