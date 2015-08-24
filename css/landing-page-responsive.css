@@ -99,6 +99,10 @@
   #o-que-fazemos .o-que-fazemos .col-md-3:first-child+.col-md-3 {
     margin-top: -170px;
   }
+
+  #entre-em-contato .inner {
+    padding-top: 80px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -187,6 +191,11 @@
   #para-quem .chamada .titulo {
     margin-top: 20px;
     font-size: 30px;
+  }
+
+
+  #entre-em-contato .inner {
+    padding-top: 120px;
   }
 }
 
