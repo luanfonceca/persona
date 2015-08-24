@@ -155,9 +155,17 @@
     margin-top: 20px;
     font-size: 40px;
   }
+  
+  #quem-somos .chamada .titulo {
+      padding-top: 100px;
+  }
 }
 
 @media (max-width: 460px) {
+  #quem-somos .chamada .titulo {
+      padding-top: 100px;
+  }
+
   #entre-em-contato #entre-em-contato-fone,
   #entre-em-contato #entre-em-contato-email {
     width: 100%;
