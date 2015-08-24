@@ -120,6 +120,13 @@
   }
 }
 
+
+@media (max-width: 681px) and (min-width: 630px) {
+  .pagina-inicial {
+      padding-bottom: 40px !important;
+  }
+}
+
 @media (max-width: 680px) {
   .pagina-inicial-lead .intro-logo {
     margin-top: 0;
@@ -134,14 +141,13 @@
   }
 }
 
-
 @media (max-width: 630px) {
   .pagina-inicial-inner .lead p {
     line-height: 30px;
     font-size: 25px;
   }
-/*
-  #para-quem .chamada {
+
+  /*#para-quem .chamada {
     height: 350px;
   }*/
 
