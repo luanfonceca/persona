@@ -1,0 +1,80 @@
+#depoimentos {
+	padding-top: 40px;
+	padding-bottom: 0px;
+}
+
+#depoimentos .titulo {
+  font-size: 30px;
+}
+
+#depoimentos blockquote {
+  position: relative;
+  background: white;
+  min-height: 150px;
+  margin-top: 20px;
+  margin-bottom: 160px;
+  border: 1px solid #ecedf1;
+}
+
+#depoimentos blockquote:before {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  right: 65px;
+  margin-left: -10px;
+  border-top: 10px solid #ecedf1;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+#depoimentos blockquote:after {
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  right: 65px;
+  margin-left: -9px;
+  border-top: 9px solid white;
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+}
+
+#depoimentos blockquote img {
+  height: 150px;
+	width: 150px;
+  position: absolute;
+  border: 1px solid #ecedf1;
+  background: white;
+  bottom: -165px;
+  right: 0;
+  margin-left: -75px;
+}
+
+#depoimentos blockquote p.clients-words {
+    font-size: 14px;
+}
+
+#depoimentos .clients-name {
+  font-size: 14px;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+
+#depoimentos .carousel {
+  padding-bottom: 40px;
+}
+
+#depoimentos #carousel-example-generic .carousel-inner {
+	margin-top: 0;
+}
+
+#depoimentos .carousel-indicators {
+	bottom: 0;
+}
+
+#depoimentos .carousel-indicators li {
+	border-color: #24168f;
+}
+
+#depoimentos .carousel-indicators .active {
+	background-color: #24168f;
+}
