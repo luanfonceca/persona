@@ -208,6 +208,10 @@
     width: 100%;
   }
 
+  #o-que-fazemos {
+      display: block;
+  }
+
   #o-que-fazemos .o-que-fazemos div {
     width: 100%;
   }
@@ -226,6 +230,9 @@
     font-size: 30px;
   }
 
+  #clientes .cliente {
+    padding: 0;
+  }
 
   #entre-em-contato .inner {
     padding-top: 120px;
@@ -233,11 +240,24 @@
 }
 
 @media (max-width: 320px) {
+  .pagina-inicial-inner {
+    padding-top: 30px;
+  }
+
+  #intro-button {
+    margin-top: 15px;
+  }
+
   #para-quem .chamada {
     height: 350px;
   }
+
   #para-quem .chamada .titulo {
     margin-top: 50px;
     font-size: 30px;
+  }
+
+  #clientes .cliente {
+    width: 100%;
   }
 }
