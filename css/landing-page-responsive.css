@@ -168,7 +168,7 @@
 
 @media (max-width: 540px) {
   .pagina-inicial {
-    padding-bottom: 35px;
+    padding-bottom: 5px;
   }
 
   .pagina-inicial-lead {
@@ -182,6 +182,7 @@
 
   .pagina-inicial-lead-small {
     width: 100%;
+    display: block !important;
   }
 
   .pagina-inicial-lead .lead {
