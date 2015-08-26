@@ -12,7 +12,8 @@
   background: white;
   min-height: 150px;
   margin-top: 20px;
-  margin-bottom: 160px;
+  margin-bottom: 40px;
+  padding-bottom: 50px;
   border: 1px solid #ecedf1;
 }
 
@@ -26,6 +27,7 @@
   border-left: 10px solid transparent;
   border-right: 10px solid transparent;
 }
+
 #depoimentos blockquote:after {
   content: '';
   position: absolute;
@@ -37,19 +39,8 @@
   border-right: 9px solid transparent;
 }
 
-#depoimentos blockquote img {
-  height: 150px;
-	width: 150px;
-  position: absolute;
-  border: 1px solid #ecedf1;
-  background: white;
-  bottom: -165px;
-  right: 0;
-  margin-left: -75px;
-}
-
 #depoimentos blockquote p.clients-words {
-    font-size: 14px;
+  font-size: 14px;
 }
 
 #depoimentos .clients-name {
