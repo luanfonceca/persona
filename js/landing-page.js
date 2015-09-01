@@ -10,6 +10,7 @@ $(function() {
     e.preventDefault();
 
     var self = $(this);
+    self.find('.messages').html('');
     $.ajax({
       url: '//formspree.io/' + EMAIL,
       method: 'POST',
@@ -22,12 +23,12 @@ $(function() {
       success: function(data) {
         var success = MESSAGE.replace('{{ status }}', 'success');
         success = success.replace('{{ message }}', 'Email enviado com sucesso, obrigado');
-        self.append(success);
+        self.find('.messages').html(success);
       },
       error: function(err) {
         var error = MESSAGE.replace('{{ status }}', 'danger');
         error = error.replace('{{ message }}', 'deu errado');
-        self.append(error);
+        self.find('.messages').html(error);
       }
     });
   });
