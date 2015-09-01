@@ -2,6 +2,7 @@ var EMAIL = 'luanfonceca@gmail.com';
 var MESSAGE = '' +
   '<div class="alert alert-{{ status }}">' +
     '<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>' +
+    '&nbsp;' +
     '{{ message }}' +
   '</div>';
 
