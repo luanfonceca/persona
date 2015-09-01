@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
+    <link rel="shortcut icon" href="img/favicon.ico">
 
     <title>Persona - Consultoria em gestão</title>
 
@@ -539,17 +540,21 @@
           <!-- Tab panes -->
           <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="contato">
-              <form class="form-vertical" method="POST">
+              <form class="form-vertical" method="POST" action="http://formspree.io/luanfonceca@gmail.com">
                 <div class="form-group">
-                  <input type="texto" class="form-control" name="nome" id="id_nome" placeholder="Seu nome" required="required">
+                  <input type="texto" class="form-control" name="name" id="id_name" placeholder="Seu nome" required="required">
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" name="email" id="id_email" placeholder="Seu email" required="required">
+                  <input type="email" class="form-control" name="_replyto" id="id__replyto" placeholder="Seu email" required="required">
                 </div>
                 <div class="form-group">
-                  <textarea class="form-control" rows="3" name="mensagem" id="id_mensagem" placeholder="Sua mensagem" required="required"></textarea>
+                  <textarea class="form-control" rows="3" name="message" id="id_message" placeholder="Sua mensagem" required="required"></textarea>
                 </div>
-         
+
+                <input type="hidden" name="_subject" value="Contato Persona" />
+                <input class="hide" type="text" name="_gotcha">
+                <input type="hidden" name="_subject" value="Subject">
+
                 <button type="submit" class="btn btn-persona btn-persona-blue">Enviar contato</button>
               </form>
             </div>
@@ -569,5 +574,8 @@
 
     <!-- Bootstrap Core JS -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+    <!-- Landing page -->
+    <script type="text/javascript" src="js/landing-page.js"></script>
   </body>
 </html>

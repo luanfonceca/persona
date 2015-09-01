@@ -31,6 +31,12 @@
   }
 }
 
+@media (min-width: 850px) {
+  .pagina-inicial-lead {
+    width: 790px;
+  }
+}
+
 @media (max-width: 850px) {
   .pagina-inicial-lead {
     padding-left: 20px;
