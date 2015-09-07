@@ -175,6 +175,12 @@ h6 {
   z-index: 1;
 }
 
+.navbar-persona.affix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 .navbar-persona .navbar-nav {
   background-color: #24168f;
   opacity: 0.87;

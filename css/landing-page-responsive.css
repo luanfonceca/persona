@@ -71,7 +71,7 @@
     font-size: 35.56px;
   }
 
-  #quem-somos .navbar-persona .navbar-nav {
+  #quem-somos .navbar-persona:not(.affix) .navbar-nav {
     margin-top: 6px;
   }
 
