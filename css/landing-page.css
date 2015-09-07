@@ -261,10 +261,6 @@ h6 {
   line-height: normal;
 }
 
-#o-que-fazemos {
-  display: inline-block;
-}
-
 #o-que-fazemos .btn-persona-inverse {
   margin: 40px auto;
 }
@@ -284,7 +280,7 @@ h6 {
   background-color: #0064a2;
   box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.51);
   height: 200px;
-  margin-top: -170px;
+  margin-top: -200px;
 }
 
 #o-que-fazemos .o-que-fazemos .solucoes-logo div {
@@ -296,28 +292,28 @@ h6 {
 }
 
 #o-que-fazemos .o-que-fazemos .solucoes-logo #planejamento-estrategico {
-  background: url(../img/solucoes-planejamento-estrategico-bg.png) no-repeat center center;
+  background: url(../img/pilares/planejamento-estrategico-bg.png) no-repeat center center;
   background-size: cover;
   height: 115px;
   width: 115px;
 }
 
-#o-que-fazemos .o-que-fazemos .solucoes-logo #sem-nome-1 {
-  background: url(../img/solucoes-sem-nome-1-bg.png) no-repeat center center;
+#o-que-fazemos .o-que-fazemos .solucoes-logo #gestao-de-pessoas {
+  background: url(../img/pilares/gestao-de-pessoas-bg.png) no-repeat center center;
   background-size: cover;
   height: 115px;
   width: 100px;
 }
 
-#o-que-fazemos .o-que-fazemos .solucoes-logo #sem-nome-2 {
-  background: url(../img/solucoes-sem-nome-2-bg.png) no-repeat center center;
+#o-que-fazemos .o-que-fazemos .solucoes-logo #gestao-de-processos {
+  background: url(../img/pilares/gestao-de-processos-bg.png) no-repeat center center;
   background-size: cover;
   height: 110px;
   width: 140px;
 }
 
-#o-que-fazemos .o-que-fazemos .solucoes-logo #sem-nome-3 {
-  background: url(../img/solucoes-sem-nome-3-bg.png) no-repeat center center;
+#o-que-fazemos .o-que-fazemos .solucoes-logo #treinamento-e-desenvolvimento {
+  background: url(../img/pilares/treinamento-e-desenvolvimento-bg.png) no-repeat center center;
   background-size: cover;
   height: 118px;
   width: 118px;
@@ -331,10 +327,14 @@ h6 {
   padding-bottom: 20px;
   border-bottom: 1px solid #e1e1e1;
 }
-/*
-#para-quem {
-  display: inline-block;
-}*/
+
+#o-que-fazemos .pilar {
+  cursor: pointer;
+}
+
+#o-que-fazemos .pilar:hover .solucoes-logo {
+  background-color: #24168f;
+}
 
 #para-quem .chamada {
   height: 285px;
