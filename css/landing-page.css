@@ -85,7 +85,7 @@ h6 {
 }
 
 #pagina-inicial #pagina-inicial-slider .carousel-indicators {
-  bottom: 40px;
+  bottom: 100px;
 }
 
 #pagina-inicial #pagina-inicial-slider .item {
@@ -125,6 +125,7 @@ h6 {
 .pagina-inicial-lead .lead {
   padding-left: 60px;
   text-align: left;
+  padding-bottom: 74px;
 }
 
 .pagina-inicial-lead p {
