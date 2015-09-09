@@ -60,13 +60,13 @@ h6 {
 .pagina-inicial {
   text-align: center;
   color: #f8f8f8;
-  padding-bottom: 20px;
+  /*padding-bottom: 20px;*/
 }
 
 .pagina-inicial-inner {
   position: relative;
   padding-top: 100px;
-  padding-bottom: 50px;
+  /*padding-bottom: 50px;*/
 }
 
 #pagina-inicial #pagina-inicial-slider {
@@ -81,7 +81,7 @@ h6 {
 }
 
 #pagina-inicial #pagina-inicial-slider .carousel-inner {
-  height: 560px;
+  height: 550px;
 }
 
 #pagina-inicial #pagina-inicial-slider .carousel-indicators {
@@ -169,6 +169,7 @@ h6 {
 .navbar-persona { 
   border: none;
   height: 60px;
+  /*top: 10px;*/
   font-size: 11px;
   color: #fff;
   text-transform: uppercase;
@@ -214,7 +215,7 @@ h6 {
 }
 
 #quem-somos .chamada {
-  height: 290px;
+  height: 219px;
   background: url(../img/quem-somos-bg.png) no-repeat center center;
   background-size: cover;
   background-position-y: -85px;

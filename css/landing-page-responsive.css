@@ -4,7 +4,7 @@
   }
 
   .pagina-inicial-inner {
-    padding-top: 40px;
+    padding-top: 30px;
   }
 
   .pagina-inicial {
@@ -113,7 +113,12 @@
 
 @media (max-width: 767px) {
   .pagina-inicial {
-    padding-bottom: 40px;
+    /*padding-bottom: 40px;*/
+    padding-bottom: 0px;
+  }
+
+  .navbar-persona {
+    top: 56px;
   }
 
   #o-que-fazemos .o-que-fazemos .col-md-3:first-child,
