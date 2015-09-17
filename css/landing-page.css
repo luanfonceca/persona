@@ -316,7 +316,7 @@ h6 {
 }
 
 #o-que-fazemos .o-que-fazemos .solucoes-logo {
-  background-color: #24168f;
+  background-color: #0064a2;
   box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.51);
   height: 200px;
   margin-top: -160px;
@@ -377,6 +377,22 @@ h6 {
 
 #o-que-fazemos .pilar:hover .solucoes-logo {
   background-color: #fff;
+}
+
+#o-que-fazemos .o-que-fazemos .pilar:hover .solucoes-logo #planejamento-estrategico {
+  background: url(../img/pilares/planejamento-estrategico-bg-inverse.png) no-repeat center center;
+}
+
+#o-que-fazemos .o-que-fazemos .pilar:hover .solucoes-logo #gestao-de-pessoas {
+  background: url(../img/pilares/gestao-de-pessoas-bg-inverse.png) no-repeat center center;
+}
+
+#o-que-fazemos .o-que-fazemos .pilar:hover .solucoes-logo #gestao-de-processos {
+  background: url(../img/pilares/gestao-de-processos-bg-inverse.png) no-repeat center center;
+}
+
+#o-que-fazemos .o-que-fazemos .pilar:hover .solucoes-logo #treinamento-e-desenvolvimento {
+  background: url(../img/pilares/treinamento-e-desenvolvimento-bg-inverse.png) no-repeat center center;
 }
 
 #para-quem .chamada {
