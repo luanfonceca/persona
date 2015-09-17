@@ -271,14 +271,14 @@ h6 {
 }
 
 .quem-somos #descricao-esquerda {
-  padding-top: 30px;
+  padding-top: 50px;
   border-top-style: solid;
   border-top-width: 3px;
   border-top-color: #343f79;
 }
 
 .quem-somos #descricao-direita {
-  padding-top: 40px;
+  padding-top: 60px;
 }
 
 .quem-somos #descricao-direita .item {
@@ -289,7 +289,7 @@ h6 {
 }
 
 .quem-somos #descricao-direita .item:last-of-type {
-  margin-bottom: 40px;
+  margin-bottom: 50px;
 }
 
 .quem-somos #descricao-direita .item-titulo {
