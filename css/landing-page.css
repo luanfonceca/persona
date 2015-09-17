@@ -255,8 +255,10 @@ h6 {
 #quem-somos .chamada {
   height: 219px;
   background: url(../img/quem-somos-bg.png) no-repeat center center;
-  background-size: cover;
+  /*background-size: cover;*/
   /*background-position-y: -85px;*/
+  background-size: 130% auto;
+  background-position-y: -170px;
   text-align: center;
 }
 

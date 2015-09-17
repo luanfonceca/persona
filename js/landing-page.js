@@ -7,7 +7,7 @@ var MESSAGE = '' +
   '</div>';
 
 $(function() {
-  $('#contato form').submit(function(e) {
+  $('.form-formspree').submit(function(e) {
     e.preventDefault();
 
     var self = $(this);
