@@ -13,7 +13,7 @@ $(function() {
     var self = $(this);
     self.find('.messages').html('');
     $.ajax({
-      url: '//formspree.io/' + EMAIL,
+      url: '//flipmail.co/api/J3d2zZdpiouOTUIi3vTi',
       method: 'POST',
       headers: {
         'Accept': 'application/json',
