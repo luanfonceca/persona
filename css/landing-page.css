@@ -53,8 +53,8 @@ h6 {
 }
 
 .inner {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .pagina-inicial {
@@ -271,14 +271,14 @@ h6 {
 }
 
 .quem-somos #descricao-esquerda {
-  padding-top: 50px;
+  padding-top: 70px;
   border-top-style: solid;
   border-top-width: 3px;
   border-top-color: #343f79;
 }
 
 .quem-somos #descricao-direita {
-  padding-top: 60px;
+  padding-top: 80px;
 }
 
 .quem-somos #descricao-direita .item {
@@ -289,7 +289,7 @@ h6 {
 }
 
 .quem-somos #descricao-direita .item:last-of-type {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 .quem-somos #descricao-direita .item-titulo {
@@ -316,7 +316,7 @@ h6 {
 }
 
 #o-que-fazemos .o-que-fazemos .solucoes-logo {
-  background-color: #0064a2;
+  background-color: #24168f;
   box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.51);
   height: 200px;
   margin-top: -160px;
@@ -331,7 +331,7 @@ h6 {
 }
 
 #o-que-fazemos .o-que-fazemos .pilar {
-  margin-bottom: 50px;
+  margin-bottom: 70px;
 }
 
 #o-que-fazemos .o-que-fazemos .solucoes-logo #planejamento-estrategico {
@@ -376,7 +376,7 @@ h6 {
 }
 
 #o-que-fazemos .pilar:hover .solucoes-logo {
-  background-color: #24168f;
+  background-color: #fff;
 }
 
 #para-quem .chamada {
@@ -391,11 +391,19 @@ h6 {
 }
 
 #para-quem #clientes {
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 
-#para-quem #clientes .row {
-  margin-top: 30px;
+#para-quem #clientes .row:not(.carousel-inner) {
+  margin-top: 70px;
+}
+
+#para-quem #clientes .row:not(:first-of-type) {
+  margin-top: 40px;
+}
+
+#para-quem #clientes .row:nth-child(4n) {
+  margin-bottom: 50px;
 }
 
 #para-quem .clientes-logo {
@@ -480,8 +488,15 @@ h6 {
 }
 
 #depoimentos {
-  padding-top: 40px;
   padding-bottom: 0px;
+}
+
+#depoimentos.inner {
+  padding-top: 0;
+}
+
+#entre-em-contato .inner {
+  padding-top: 60px;
 }
 
 #entre-em-contato .entre-em-contato-inner {
@@ -505,7 +520,7 @@ h6 {
   float: right;
 }
 
-#entre-em-contato #contato form {
+#entre-em-contato .tab-pane form {
   padding-top: 25px;
 }
 

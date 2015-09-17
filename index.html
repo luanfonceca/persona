@@ -373,6 +373,7 @@
         </div>
 
         <div id="depoimentos" class="inner testimonials col-md-12">
+          <hr>
           <p class="titulo">Depoimentos</p>
           <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner row" role="listbox">
@@ -549,6 +550,9 @@
                   <input type="email" class="form-control" name="_replyto" id="id__replyto" placeholder="Seu email" required="required">
                 </div>
                 <div class="form-group">
+                  <input type="tel" class="form-control" name="phone" id="id_phone" placeholder="Seu telefone" required="required">
+                </div>
+                <div class="form-group">
                   <textarea class="form-control" rows="3" name="message" id="id_message" placeholder="Sua mensagem" required="required"></textarea>
                 </div>
 
@@ -556,11 +560,58 @@
                 <input class="hide" type="text" name="_gotcha">
                 <input type="hidden" name="_subject" value="Subject">
 
-                <button type="submit" class="btn btn-persona btn-persona-blue">Enviar contato</button>
+                <button type="submit" class="btn btn-persona btn-persona-blue">Enviar</button>
               </form>
             </div>
-            <div role="tabpanel" class="tab-pane" id="parceiros">Parceiros</div>
-            <div role="tabpanel" class="tab-pane" id="recrutamento">Recrutamento</div>
+            <div role="tabpanel" class="tab-pane" id="parceiros">
+              <form class="form-vertical" method="POST" action="http://formspree.io/luanfonceca@gmail.com">
+                <div class="messages"></div>
+                <div class="form-group">
+                  <input type="texto" class="form-control" name="name" id="id_name" placeholder="Seu nome" required="required">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="_replyto" id="id__replyto" placeholder="Seu email" required="required">
+                </div>
+                <div class="form-group">
+                  <input type="tel" class="form-control" name="phone" id="id_phone" placeholder="Seu telefone" required="required">
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" rows="3" name="message" id="id_message" placeholder="Sua mensagem" required="required"></textarea>
+                </div>
+
+                <input type="hidden" name="_subject" value="Contato Persona" />
+                <input class="hide" type="text" name="_gotcha">
+                <input type="hidden" name="_subject" value="Subject">
+
+                <button type="submit" class="btn btn-persona btn-persona-blue">Enviar</button>
+              </form>
+            </div>
+            <div role="tabpanel" class="tab-pane" id="recrutamento">
+              <form class="form-vertical" method="POST" action="http://formspree.io/luanfonceca@gmail.com">
+                <div class="messages"></div>
+                <div class="form-group">
+                  <input type="texto" class="form-control" name="name" id="id_name" placeholder="Seu nome" required="required">
+                </div>
+                <div class="form-group">
+                  <input type="email" class="form-control" name="_replyto" id="id__replyto" placeholder="Seu email" required="required">
+                </div>
+                <div class="form-group">
+                  <input type="tel" class="form-control" name="phone" id="id_phone" placeholder="Seu telefone" required="required">
+                </div>
+                <div class="form-group">
+                  <input type="file" class="form-control" name="attachment" id="id_attachment" placeholder="PDF ou Word" required="required">
+                </div>
+                <div class="form-group">
+                  <textarea class="form-control" rows="3" name="message" id="id_message" placeholder="Sua mensagem" required="required"></textarea>
+                </div>
+
+                <input type="hidden" name="_subject" value="Contato Persona" />
+                <input class="hide" type="text" name="_gotcha">
+                <input type="hidden" name="_subject" value="Subject">
+
+                <button type="submit" class="btn btn-persona btn-persona-blue">Enviar</button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
