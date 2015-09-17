@@ -177,13 +177,40 @@ h6 {
   z-index: 1;
 }
 
+.navbar-persona .navbar-header {
+  height: 60px;
+}
+
+.navbar-persona .navbar-toggle {
+  border-color: #fff;
+}
+
+.navbar-persona .navbar-collapse {
+  border-top: 1px solid #24168f;
+}
+
+.navbar-persona .navbar-toggle .icon-bar {
+  background-color: #fff;
+}
+
+.navbar-persona .navbar-toggle {
+  float: none;
+  margin-right: 0;
+  margin-top: 12.5px;
+}   
+
+.navbar-persona .navbar-header {
+  text-align: center;
+}
+
 .navbar-persona.affix {
   position: fixed;
   top: 0;
   width: 100%;
 }
 
-.navbar-persona .navbar-nav {
+.navbar-persona .navbar-nav,
+.navbar-persona .navbar-header {
   background-color: #24168f;
   opacity: 0.87;
 }
@@ -218,7 +245,7 @@ h6 {
   height: 219px;
   background: url(../img/quem-somos-bg.png) no-repeat center center;
   background-size: cover;
-  background-position-y: -85px;
+  /*background-position-y: -85px;*/
   text-align: center;
 }
 
@@ -274,14 +301,14 @@ h6 {
 }
 
 #o-que-fazemos .chamada .titulo {
-  padding-top: 50px;
+  padding-top: 120px;
 }
 
 #o-que-fazemos .o-que-fazemos .solucoes-logo {
   background-color: #0064a2;
   box-shadow: 0px 0px 18px 0px rgba(0, 0, 0, 0.51);
   height: 200px;
-  margin-top: -200px;
+  margin-top: -160px;
 }
 
 #o-que-fazemos .o-que-fazemos .solucoes-logo div {
@@ -290,6 +317,10 @@ h6 {
   margin-right: auto;
   position: relative;
   top: 42.5px;
+}
+
+#o-que-fazemos .o-que-fazemos .pilar {
+  margin-bottom: 30px;
 }
 
 #o-que-fazemos .o-que-fazemos .solucoes-logo #planejamento-estrategico {
@@ -345,7 +376,7 @@ h6 {
 }
 
 #para-quem .chamada .titulo {
-  padding-top: 60px;
+  padding-top: 90px;
 }
 
 #para-quem #clientes {

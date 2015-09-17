@@ -118,7 +118,8 @@
   }
 
   .navbar-persona {
-    top: 56px;
+    /*top: 56px;*/
+    top: 46px;
   }
 
   #o-que-fazemos .o-que-fazemos .col-md-3:first-child,
@@ -210,6 +211,10 @@
 
   #pagina-inicial #pagina-inicial-slider .carousel-inner {
     height: 560px;
+  }
+
+  .navbar-persona {
+    top: 10px;
   }
 }
 
