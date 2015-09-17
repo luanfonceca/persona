@@ -316,58 +316,85 @@
       <div id="clientes" class="col-md-offset-1 col-md-10">
         <div class="row">
           <div class="cliente col-md-3 col-sm-3 col-xs-6">
-            <div class="clientes-logo" id="boca"></div>
+            <div class="borda">
+              <div class="clientes-logo" id="boca"></div>
+            </div>
           </div>
           <div class="cliente col-md-3 col-sm-3 col-xs-6">
-            <div class="clientes-logo" id="transmar"></div>
+            <div class="borda">
+              <div class="clientes-logo" id="transmar"></div>
+            </div>
           </div>
           <div class="cliente col-md-3 col-sm-3 col-xs-6">
-            <div class="clientes-logo" id="armazem-para"></div>
+            <div class="borda">
+              <div class="clientes-logo" id="armazem-para"></div>
+            </div>
           </div>
           <div class="cliente col-md-3 col-sm-3 col-xs-6">
-            <div class="clientes-logo" id="posto-amigo"></div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="cliente col-md-3 col-sm-3 col-xs-6">
-            <div class="clientes-logo" id="nordestao"></div>
-          </div>
-          <div class="cliente col-md-3 col-sm-3 col-xs-6">
-            <div class="clientes-logo" id="aguia-telecom"></div>
-          </div>
-          <div class="cliente col-md-3 col-sm-3 col-xs-6">
-            <div class="clientes-logo" id="riachuelo"></div>
-          </div>
-          <div class="cliente col-md-3 col-sm-3 col-xs-6">
-            <div class="clientes-logo" id="cdr-natal"></div>
+            <div class="borda">
+              <div class="clientes-logo" id="posto-amigo"></div>
+            </div>
           </div>
         </div>
         <div class="row">
           <div class="cliente col-md-3 col-sm-3 col-xs-6">
-            <div class="clientes-logo" id="grupo-vila"></div>
+            <div class="borda">
+              <div class="clientes-logo" id="nordestao"></div>
+            </div>
           </div>
           <div class="cliente col-md-3 col-sm-3 col-xs-6">
-            <div class="clientes-logo" id="super-show"></div>
+            <div class="borda">
+              <div class="clientes-logo" id="aguia-telecom"></div>
+            </div>
           </div>
           <div class="cliente col-md-3 col-sm-3 col-xs-6">
-            <div class="clientes-logo" id="padaria-sao-miguel"></div>
+            <div class="borda">
+              <div class="clientes-logo" id="riachuelo"></div>
+            </div>
           </div>
           <div class="cliente col-md-3 col-sm-3 col-xs-6">
-            <div class="clientes-logo" id="casa-durval-paiva"></div>
+            <div class="borda">
+              <div class="clientes-logo" id="cdr-natal"></div>
+            </div>
           </div>
         </div>
         <div class="row">
           <div class="cliente col-md-3 col-sm-3 col-xs-6">
-            <div class="clientes-logo" id="wt-distribuidora"></div>
+            <div class="borda">
+              <div class="clientes-logo" id="grupo-vila"></div>
+            </div>
           </div>
           <div class="cliente col-md-3 col-sm-3 col-xs-6">
-            <div class="clientes-logo" id="bemis"></div>
+            <div class="borda">
+              <div class="clientes-logo" id="super-show"></div>
+            </div>
           </div>
           <div class="cliente col-md-3 col-sm-3 col-xs-6">
-            <div class="clientes-logo" id="cebrac"></div>
+            <div class="borda">
+              <div class="clientes-logo" id="padaria-sao-miguel"></div>
+            </div>
           </div>
           <div class="cliente col-md-3 col-sm-3 col-xs-6">
-            <div class="clientes-logo" id=""></div>
+            <div class="borda">
+              <div class="clientes-logo" id="casa-durval-paiva"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="cliente col-md-3 col-sm-3 col-xs-6">
+            <div class="borda">
+              <div class="clientes-logo" id="wt-distribuidora"></div>
+            </div>
+          </div>
+          <div class="cliente col-md-3 col-sm-3 col-xs-6">
+            <div class="borda">
+              <div class="clientes-logo" id="bemis"></div>
+            </div>
+          </div>
+          <div class="cliente col-md-3 col-sm-3 col-xs-6">
+            <div class="borda">
+              <div class="clientes-logo" id="cebrac"></div>
+            </div>
           </div>
         </div>
 
@@ -539,13 +566,13 @@
           <!-- Tab panes -->
           <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="contato">
-              <form class="form-formspree form-vertical" method="POST" action="http://formspree.io/luanfonceca@gmail.com">
+              <form class="form-formspree form-vertical" method="POST" action="//flipmail.co/api/J3d2zZdpiouOTUIi3vTi">
                 <div class="messages"></div>
                 <div class="form-group">
                   <input type="texto" class="form-control" name="name" id="id_name" placeholder="Seu nome" required="required">
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" name="_replyto" id="id__replyto" placeholder="Seu email" required="required">
+                  <input type="email" class="form-control" name="email" id="id__replyto" placeholder="Seu email" required="required">
                 </div>
                 <div class="form-group">
                   <input type="tel" class="form-control" name="phone" id="id_phone" placeholder="Seu telefone" required="required">
@@ -557,18 +584,19 @@
                 <input type="hidden" name="_subject" value="Contato Persona" />
                 <input class="hide" type="text" name="_gotcha">
                 <input type="hidden" name="_subject" value="Subject">
+                <input type="hidden" name="_replyto" value="%email">
 
                 <button type="submit" class="btn btn-persona btn-persona-blue">Enviar</button>
               </form>
             </div>
             <div role="tabpanel" class="tab-pane" id="parceiros">
-              <form class="form-formspree form-vertical" method="POST" action="http://formspree.io/luanfonceca@gmail.com">
+              <form class="form-formspree form-vertical" method="POST" action="//flipmail.co/api/J3d2zZdpiouOTUIi3vTi">
                 <div class="messages"></div>
                 <div class="form-group">
                   <input type="texto" class="form-control" name="name" id="id_name" placeholder="Seu nome" required="required">
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" name="_replyto" id="id__replyto" placeholder="Seu email" required="required">
+                  <input type="email" class="form-control" name="email" id="id__replyto" placeholder="Seu email" required="required">
                 </div>
                 <div class="form-group">
                   <input type="tel" class="form-control" name="phone" id="id_phone" placeholder="Seu telefone" required="required">
@@ -580,18 +608,19 @@
                 <input type="hidden" name="_subject" value="Parceiros Persona" />
                 <input class="hide" type="text" name="_gotcha">
                 <input type="hidden" name="_subject" value="Subject">
+                <input type="hidden" name="_replyto" value="%email">
 
                 <button type="submit" class="btn btn-persona btn-persona-blue">Enviar</button>
               </form>
             </div>
             <div role="tabpanel" class="tab-pane" id="recrutamento">
-              <form class="form-formspree form-vertical" method="POST" action="http://formspree.io/luanfonceca@gmail.com">
+              <form class="form-formspree form-vertical" method="POST" action="//flipmail.co/api/J3d2zZdpiouOTUIi3vTi">
                 <div class="messages"></div>
                 <div class="form-group">
                   <input type="texto" class="form-control" name="name" id="id_name" placeholder="Seu nome" required="required">
                 </div>
                 <div class="form-group">
-                  <input type="email" class="form-control" name="_replyto" id="id__replyto" placeholder="Seu email" required="required">
+                  <input type="email" class="form-control" name="email" id="id_email" placeholder="Seu email" required="required">
                 </div>
                 <div class="form-group">
                   <input type="tel" class="form-control" name="phone" id="id_phone" placeholder="Seu telefone" required="required">
@@ -606,6 +635,7 @@
                 <input type="hidden" name="_subject" value="Regrutamento Persona" />
                 <input class="hide" type="text" name="_gotcha">
                 <input type="hidden" name="_subject" value="Subject">
+                <input type="hidden" name="_replyto" value="%email">
 
                 <button type="submit" class="btn btn-persona btn-persona-blue">Enviar</button>
               </form>

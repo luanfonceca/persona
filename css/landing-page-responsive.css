@@ -84,14 +84,14 @@
     float: left;
   }
 
-  #quem-somos .chamada {
+  /*#quem-somos .chamada {
     height: 390px;
     background-position-y: 6px;
   }
 
   #quem-somos .chamada .titulo {
     padding-top: 170px;
-  }
+  }*/
 
   #para-quem #clientes .cliente {
     margin-top: 30px;
@@ -219,6 +219,10 @@
 }
 
 @media (max-width: 460px) {
+  #quem-somos .chamada {
+    height: 300px;
+  }
+
   #quem-somos .chamada .titulo {
       padding-top: 100px;
   }
