@@ -294,6 +294,7 @@ h6 {
   font-style: italic;
   margin-bottom: 20px;
   opacity: 0;
+  border-left: 5px solid #343f79;
 }
 
 .quem-somos #descricao-direita .item:last-of-type {
