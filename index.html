@@ -11,6 +11,7 @@
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet">
 
     <!-- Custom CSS -->
     <link href="css/landing-page.css" rel="stylesheet">
@@ -80,12 +81,12 @@
 
         <div class="collapse navbar-collapse" id="menu" style="padding:0">
           <ul class="nav navbar-nav">
-            <li><a href="#pagina-inicial">página inicial</a></li>
-            <li><a href="#quem-somos">quem somos</a></li>
-            <li><a href="#o-que-fazemos">o que fazemos</a></li>
-            <li><a href="#para-quem">para quem</a></li>
-            <li><a href="#entre-em-contato">entre em contato</a></li>
-            <li><a href="#entre-em-contato">onde estamos</a></li>
+            <li><a class="btn-hover" href="#pagina-inicial">página inicial</a></li>
+            <li><a class="btn-hover" href="#quem-somos">quem somos</a></li>
+            <li><a class="btn-hover" href="#o-que-fazemos">o que fazemos</a></li>
+            <li><a class="btn-hover" href="#para-quem">para quem</a></li>
+            <li><a class="btn-hover" href="#entre-em-contato">entre em contato</a></li>
+            <li><a class="btn-hover" href="#entre-em-contato">onde estamos</a></li>
           </ul>
         </div>
       </div>
@@ -128,19 +129,19 @@
           </div>
 
           <div class="col-md-6 col-sm-6" id="descricao-direita">
-            <div class="item">
+            <div class="item" id="missao">
               <p class="item-titulo bold">Missão</p>
               <p class="texto item-texto">
                 Oferecer aos nossos clientes soluções em gestão de pessoas, processos e estratégia de forma customizada, buscando sempre impulsionar a performance empresarial, através de ferramentas que oportunizem o desenvolvimento organizacional contínuo.
               </p>
             </div>
-            <div class="item">
+            <div class="item" id="visao">
               <p class="item-titulo bold">Nossa visão</p>
               <p class="texto item-texto">
                 Ser reconhecida no mercado local e regional como consultoria que agregue valor aos produtos e servições de nossos clientes, através dep ráticas que garantam uma maior rentabilidade às empresas parceiras.
               </p>
             </div>
-            <div class="item">
+            <div class="item" id="valores">
               <p class="item-titulo bold">Valores</p>
               <p class="texto item-texto">
                 <ul>
@@ -169,7 +170,7 @@
         <div class="o-que-fazemos col-md-offset-1 col-md-10">
           <div class="col-md-3 col-sm-3 col-xs-6">
             <div class="pilar" data-toggle="modal" data-target="#pilar-gestao-de-pessoas">
-              <div class="solucoes-logo">
+              <div class="solucoes-logo btn-hover">
                 <div id="gestao-de-pessoas"></div>
               </div>
               <p class="bold text-center">Gestão de Pessoas</p>
@@ -206,7 +207,7 @@
 
           <div class="col-md-3 col-sm-3 col-xs-6">
             <div class="pilar" data-toggle="modal" data-target="#pilar-treinamento-e-desenvolvimento">
-              <div class="solucoes-logo">
+              <div class="solucoes-logo btn-hover">
                 <div id="treinamento-e-desenvolvimento"></div>
               </div>
               <p class="bold text-center">Treinamento e Desenvolvimento</p>
@@ -241,7 +242,7 @@
 
           <div class="col-md-3 col-sm-3 col-xs-6">
             <div class="pilar" data-toggle="modal" data-target="#pilar-gestao-de-processos">
-              <div class="solucoes-logo">
+              <div class="solucoes-logo btn-hover">
                 <div id="gestao-de-processos"></div>
               </div>
               <p class="bold text-center">Gestão de Processos</p>
@@ -272,7 +273,7 @@
 
           <div class="col-md-3 col-sm-3 col-xs-6">
             <div class="pilar" data-toggle="modal" data-target="#pilar-gestao-estrategica">
-              <div class="solucoes-logo">
+              <div class="solucoes-logo btn-hover">
                 <div id="planejamento-estrategico"></div>
               </div>
               <p class="bold text-center">Gestão Estratégica</p>
@@ -587,7 +588,7 @@
                 <input type="hidden" name="_subject" value="Subject">
                 <input type="hidden" name="_replyto" value="%email">
 
-                <button type="submit" class="btn btn-persona btn-persona-blue">Enviar</button>
+                <button type="submit" class="btn btn-hover btn-persona btn-hover btn-persona-blue">Enviar</button>
               </form>
             </div>
             <div role="tabpanel" class="tab-pane" id="parceiros">
@@ -611,7 +612,7 @@
                 <input type="hidden" name="_subject" value="Subject">
                 <input type="hidden" name="_replyto" value="%email">
 
-                <button type="submit" class="btn btn-persona btn-persona-blue">Enviar</button>
+                <button type="submit" class="btn btn-hover btn-persona btn-hover btn-persona-blue">Enviar</button>
               </form>
             </div>
             <div role="tabpanel" class="tab-pane" id="recrutamento">
@@ -638,7 +639,7 @@
                 <input type="hidden" name="_subject" value="Subject">
                 <input type="hidden" name="_replyto" value="%email">
 
-                <button type="submit" class="btn btn-persona btn-persona-blue">Enviar</button>
+                <button type="submit" class="btn btn-hover btn-persona btn-hover btn-persona-blue">Enviar</button>
               </form>
             </div>
           </div>

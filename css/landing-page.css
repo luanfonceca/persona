@@ -57,6 +57,12 @@ h6 {
   padding-bottom: 70px;
 }
 
+.btn-hover {
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  transition: all 0.6s;
+}
+
 .pagina-inicial {
   text-align: center;
   color: #f8f8f8;
@@ -287,6 +293,7 @@ h6 {
   padding: 20px;
   font-style: italic;
   margin-bottom: 20px;
+  opacity: 0;
 }
 
 .quem-somos #descricao-direita .item:last-of-type {
@@ -333,6 +340,7 @@ h6 {
 
 #o-que-fazemos .o-que-fazemos .pilar {
   margin-bottom: 70px;
+  opacity: 0;
 }
 
 #o-que-fazemos .o-que-fazemos .solucoes-logo #planejamento-estrategico {
@@ -426,6 +434,10 @@ h6 {
 #para-quem #clientes .borda {
   padding: 10px auto;
   border: 1px solid #cecece;
+}
+
+#para-quem .cliente {
+  opacity: 0;
 }
 
 #para-quem .clientes-logo {

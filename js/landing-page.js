@@ -33,4 +33,27 @@ $(function() {
       }
     });
   });
+
+  // Animations
+  var pageHeight = $(window).height();
+  var missionsHeight = $("#descricao-direita").offset().top;
+  var customersHeight = $("#para-quem").offset().top;
+  var solutionsHeight = $("#o-que-fazemos").offset().top;
+  var onAnimationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+  $(window).scroll(function(){
+    if ($(window).scrollTop() > (missionsHeight - pageHeight / 1.5)) {
+      var classes = 'animated fadeInDown';
+      $('#descricao-direita #missao').addClass(classes).one(onAnimationEnd, function() {
+        $('#descricao-direita #visao').addClass(classes).one(onAnimationEnd, function() {
+          $('#descricao-direita #valores').addClass(classes);
+        });
+      });
+    }
+    if ($(window).scrollTop() > (customersHeight - pageHeight / 2)) {
+      $('#clientes .cliente').addClass('animated fadeIn');
+    }
+    if ($(window).scrollTop() > (solutionsHeight - pageHeight / 2)) {
+      $('#o-que-fazemos .pilar').addClass('animated fadeIn');
+    }
+  });
 });
