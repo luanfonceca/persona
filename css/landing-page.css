@@ -260,7 +260,7 @@ h6 {
 
 #quem-somos .chamada {
   height: 219px;
-  background: url(../img/quem-somos-bg.png) no-repeat center center;
+  background: url(../img/quem-somos-bg.jpg) no-repeat center center;
   background-size: cover;
   /*background-size: 130% auto;
   background-position-y: -170px;*/
@@ -317,7 +317,7 @@ h6 {
 
 #o-que-fazemos .chamada {
   height: 430px;
-  background: url(../img/o-que-fazemos-bg.png) no-repeat center center;
+  background: url(../img/o-que-fazemos-bg.jpg) no-repeat center center;
   background-size: cover;
   background-position-y: 0;
 }
@@ -409,7 +409,7 @@ h6 {
 
 #para-quem .chamada {
   height: 285px;
-  background: url(../img/para-quem-bg.png) no-repeat center center;
+  background: url(../img/para-quem-bg.jpg) no-repeat center center;
   background-size: cover;
   text-align: center;
 }
