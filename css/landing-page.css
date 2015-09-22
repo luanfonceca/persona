@@ -175,7 +175,6 @@ h6 {
 .navbar-persona { 
   border: none;
   height: 60px;
-  /*top: 10px;*/
   font-size: 11px;
   color: #fff;
   text-transform: uppercase;
@@ -191,7 +190,7 @@ h6 {
   border-color: #fff;
 }
 
-.navbar-persona .navbar-collapse {
+.navbar-persona .navbar-collapse.collapse.in {
   border-top: 1px solid #24168f;
 }
 
@@ -248,7 +247,8 @@ h6 {
   letter-spacing: 0.30em; 
 }
 
-.navbar-persona .navbar-nav a:hover {
+.navbar-persona .navbar-nav a:hover,
+.navbar-persona .navbar-nav a:focus {
   background-color: #fff;
   color: #000;
 }
