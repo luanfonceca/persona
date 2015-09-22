@@ -582,6 +582,12 @@ h6 {
   border-left: none;
 }
 
+#entre-em-contato #formularios-contato h3 {
+  color: #343f79;
+  margin-top: 0px;
+}
+
+
 #entre-em-contato #nav-tabs-contato a,
 #entre-em-contato #contato input, textarea {
   border-radius: 0;
