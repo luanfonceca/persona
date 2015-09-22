@@ -37,9 +37,13 @@ $(function() {
   // Animations
   var pageHeight = $(window).height();
   var missionsHeight = $("#descricao-direita").offset().top;
-  var customersHeight = $("#para-quem").offset().top;
-  var solutionsHeight = $("#o-que-fazemos").offset().top;
+  var customersHeight = $("#para-quem").height();
+  var solutionsHeight = $("#o-que-fazemos").height();
   var onAnimationEnd = 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend';
+  var removeClasses = function() {
+    $(".navbar-nav li.active").removeClass('active');
+  };
+
   $(window).scroll(function(){
     if ($(window).scrollTop() > (missionsHeight - pageHeight / 1.5)) {
       var classes = 'animated fadeInDown';
@@ -58,15 +62,13 @@ $(function() {
   });
 
   $('.btn-anchor').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
+    var target = $(this.hash);
+    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+    if (target.length) {
+      $('html,body').animate({
+        scrollTop: target.offset().top
+      }, 1000);
+      return false;
     }
   });
 });

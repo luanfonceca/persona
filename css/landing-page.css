@@ -247,11 +247,16 @@ h6 {
   letter-spacing: 0.30em; 
 }
 
-.navbar-persona .navbar-nav a:hover,
 .navbar-persona .navbar-nav a:focus {
+  background-color: transparent;
+  outline: none;
+}
+
+.navbar-persona .navbar-nav a:hover {
   background-color: #fff;
   color: #000;
 }
+
 
 #slider {
   margin-top: 70px;
