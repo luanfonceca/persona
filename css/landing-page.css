@@ -135,15 +135,22 @@ h6 {
 }
 
 .pagina-inicial-lead p {
-  line-height: 59.65px;
-  font-size: 42.56px;
+  line-height: 54.9px;
+  font-size: 28.55px;
   text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.pagina-inicial-lead .lead button {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  font-weight: lighter;
 }
 
 .btn-persona {
   border-radius: 25px;
-  border-color: #fff;
-  background-color: transparent;
+  /*border-color: #fff;*/
+  background-color: #281c8b;
   color: #fff;
   font-size: 15px;
   padding: 8px 20px;
@@ -348,25 +355,26 @@ h6 {
 
 #o-que-fazemos .o-que-fazemos .pilar {
   margin-bottom: 70px;
+  line-height: 30px;
   opacity: 0;
-}
-
-#o-que-fazemos .o-que-fazemos .solucoes-logo #planejamento-estrategico {
-  background: url(../img/pilares/planejamento-estrategico-bg.png) no-repeat center center;
-  background-size: cover;
-  height: 115px;
-  width: 115px;
 }
 
 #o-que-fazemos .o-que-fazemos .solucoes-logo #gestao-de-pessoas {
   background: url(../img/pilares/gestao-de-pessoas-bg.png) no-repeat center center;
   background-size: cover;
   height: 115px;
-  width: 100px;
+  width: 115px;
 }
 
 #o-que-fazemos .o-que-fazemos .solucoes-logo #gestao-de-processos {
   background: url(../img/pilares/gestao-de-processos-bg.png) no-repeat center center;
+  background-size: cover;
+  height: 115px;
+  width: 100px;
+}
+
+#o-que-fazemos .o-que-fazemos .solucoes-logo #planejamento-estrategico {
+  background: url(../img/pilares/planejamento-estrategico-bg.png) no-repeat center center;
   background-size: cover;
   height: 110px;
   width: 140px;
