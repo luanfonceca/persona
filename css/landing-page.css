@@ -400,10 +400,6 @@ p {
   border-bottom: 1px solid #e1e1e1;
 }
 
-#o-que-fazemos .pilar {
-  cursor: pointer;
-}
-
 #o-que-fazemos .pilar:hover .solucoes-logo {
   background-color: #fff;
 }
@@ -422,6 +418,10 @@ p {
 
 #o-que-fazemos .o-que-fazemos .pilar:hover .solucoes-logo #treinamento-e-desenvolvimento {
   background: url(../img/pilares/treinamento-e-desenvolvimento-bg-inverse.png) no-repeat center center;
+}
+
+#o-que-fazemos .btn-persona {
+  border-radius: 30px;
 }
 
 #para-quem .chamada {
@@ -614,13 +614,13 @@ p {
   resize: vertical;
 }
 
-#entre-em-contato .btn-persona-blue {
+.btn-persona-blue {
   background-color: #0064a2;
   border-radius: 0;
 }
 
-#entre-em-contato .btn-persona-blue:hover,
-#entre-em-contato .btn-persona-blue:active {
+.btn-persona-blue:hover,
+.btn-persona-blue:active {
   background-color: transparent;
   border: 1px solid #0064a2;
   color: #0064a2;
