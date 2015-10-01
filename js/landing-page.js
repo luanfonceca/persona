@@ -47,8 +47,8 @@ $(function() {
   $(window).scroll(function(){
     if ($(window).scrollTop() > (missionsHeight - pageHeight / 1.5)) {
       var classes = 'animated fadeInDown';
-      $('#descricao-direita #missao').addClass(classes).one(onAnimationEnd, function() {
-        $('#descricao-direita #visao').addClass(classes).one(onAnimationEnd, function() {
+      $('#descricao-direita #visao').addClass(classes).one(onAnimationEnd, function() {
+        $('#descricao-direita #missao').addClass(classes).one(onAnimationEnd, function() {
           $('#descricao-direita #valores').addClass(classes);
         });
       });
