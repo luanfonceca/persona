@@ -78,5 +78,5 @@ $(function() {
         return $(window).height() - $(e).height();
       }
     }
-});
+  });
 });

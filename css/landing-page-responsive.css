@@ -10,11 +10,6 @@
   .pagina-inicial {
     padding-bottom: 0;
   }
-
-  #pagina-inicial #pagina-inicial-slider .carousel-indicators {
-    /*bottom: 70px;*/
-    bottom: 200px;
-  }
 }
 
 @media (max-width: 960px) {
@@ -109,13 +104,7 @@
 
 @media (max-width: 767px) {
   .pagina-inicial {
-    /*padding-bottom: 40px;*/
     padding-bottom: 0px;
-  }
-
-  .navbar-persona {
-    /*top: 56px;*/
-    top: 46px;
   }
 
   #o-que-fazemos .o-que-fazemos .col-md-3:first-child,
@@ -203,14 +192,6 @@
 
   .pagina-inicial-inner .lead-small p {
     line-height: 30px;
-  }
-
-  /*#pagina-inicial #pagina-inicial-slider .carousel-inner {
-    height: 560px;
-  }*/
-
-  .navbar-persona {
-    top: 10px;
   }
 }
 
