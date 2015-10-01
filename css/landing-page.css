@@ -91,11 +91,15 @@ p {
 }
 
 #pagina-inicial #pagina-inicial-slider .carousel-inner {
-  height: 550px;
+  height: 100vh;
+}
+
+#pagina-inicial #pagina-inicial-slider .carousel-caption {
+  top: 20vh;
 }
 
 #pagina-inicial #pagina-inicial-slider .carousel-indicators {
-  bottom: 100px;
+  bottom: 20vh;
 }
 
 #pagina-inicial #pagina-inicial-slider .item {
@@ -187,7 +191,7 @@ p {
 .navbar-persona { 
   border: none;
   height: 60px;
-  top: 15px;
+  top: -60px;
   font-size: 11px;
   color: #fff;
   text-transform: uppercase;

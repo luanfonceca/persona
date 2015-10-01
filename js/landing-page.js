@@ -71,4 +71,12 @@ $(function() {
       return false;
     }
   });
+
+  $(".navbar-persona").affix({
+    offset: {
+      top: function(e) {
+        return $(window).height() - $(e).height();
+      }
+    }
+});
 });

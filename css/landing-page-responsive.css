@@ -1,7 +1,7 @@
 @media (max-width: 1024px) {
-  #pagina-inicial #pagina-inicial-slider .carousel-inner {
+  /*#pagina-inicial #pagina-inicial-slider .carousel-inner {
     height: 480px;
-  }
+  }*/
 
   .pagina-inicial-inner {
     padding-top: 30px;
@@ -12,7 +12,8 @@
   }
 
   #pagina-inicial #pagina-inicial-slider .carousel-indicators {
-    bottom: 70px;
+    /*bottom: 70px;*/
+    bottom: 200px;
   }
 }
 
@@ -204,9 +205,9 @@
     line-height: 30px;
   }
 
-  #pagina-inicial #pagina-inicial-slider .carousel-inner {
+  /*#pagina-inicial #pagina-inicial-slider .carousel-inner {
     height: 560px;
-  }
+  }*/
 
   .navbar-persona {
     top: 10px;
