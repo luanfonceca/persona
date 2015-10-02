@@ -88,7 +88,7 @@ $(function() {
       return;
     };
 
-    if ((offsetTop + height) > (pageOffsetTop - 60)) {
+    if ((offsetTop + height) > (pageOffsetTop - 100)) {
        $("html, body").animate({
         scrollTop: '100px'
       });
