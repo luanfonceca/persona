@@ -79,4 +79,20 @@ $(function() {
       }
     }
   });
+
+  $('.navbar-toggle').click(function() {
+    var height = $(".navbar-persona").height();
+    var offsetTop = $(".navbar-persona").offset().top;
+    var pageOffsetTop = $(window).scrollTop() + $(window).height();
+    if (!$(this).hasClass('collapsed')) {
+      return;
+    };
+
+    if ((offsetTop + height) > (pageOffsetTop - 60)) {
+       $("html, body").animate({
+        scrollTop: '100px'
+      });
+    }
+
+  });
 });
