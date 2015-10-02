@@ -81,18 +81,17 @@ $(function() {
   });
 
   $('.navbar-toggle').click(function() {
-    var height = $(".navbar-persona").height();
-    var offsetTop = $(".navbar-persona").offset().top;
-    var pageOffsetTop = $(window).scrollTop() + $(window).height();
     if (!$(this).hasClass('collapsed')) {
       return;
     };
 
+    var height = $(".navbar-persona").height();
+    var offsetTop = $(".navbar-persona").offset().top;
+    var pageOffsetTop = $(window).scrollTop() + $(window).height();
     if ((offsetTop + height) > (pageOffsetTop - 100)) {
        $("html, body").animate({
         scrollTop: '100px'
       });
     }
-
   });
 });
