@@ -133,6 +133,7 @@
 @media (max-width: 680px) {
   .pagina-inicial-lead .intro-logo {
     margin-top: 0;
+    margin-left: 0;
   }
 
   .pagina-inicial-inner .lead p {
@@ -204,6 +205,28 @@
 }
 
 @media (max-width: 460px) {
+  .hide-in-mobile {
+    display: hide;
+  }
+
+  .show-in-mobile {
+    display: block;
+  }
+
+  #pagina-inicial .pagina-inicial-inner .lead {
+    top: 30px;
+    position: relative;
+    padding-left: 0px;
+  }
+
+  #pagina-inicial .pagina-inicial-inner .lead p {
+    font-size: 20px;
+  }
+
+  #pagina-inicial #pagina-inicial-slider .carousel-caption {
+    top: 40px;
+  }
+
   #quem-somos .chamada {
     height: 300px;
   }

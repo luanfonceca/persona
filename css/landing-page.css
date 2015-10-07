@@ -116,8 +116,12 @@ p {
           background-size: cover;
 }
 
-.pagina-inicial-lead-small {
-  display: none !important;
+.hide-in-mobile {
+  /*display: inherit;*/
+}
+
+.show-in-mobile {
+  display: none;
 }
 
 .pagina-inicial-lead {
