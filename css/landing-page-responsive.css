@@ -144,6 +144,12 @@
   }
 }
 
+@media (max-height: 630px) {
+  #pagina-inicial #pagina-inicial-slider .carousel-indicators {
+    bottom: 120px;
+  }
+}
+
 @media (max-width: 630px) {
   .pagina-inicial {
     padding-bottom: 40px;
