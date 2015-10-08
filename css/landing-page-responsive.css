@@ -54,7 +54,7 @@
 
 @media (max-width: 769px) {
   .navbar-persona {
-    font-size: 8px;
+    /*font-size: 8px;*/
   }
 
   .pagina-inicial {
@@ -158,7 +158,8 @@
 
   .pagina-inicial-inner .lead-small p,
   .pagina-inicial-inner .lead p {
-    font-size: 25px;
+    font-size: 20px;
+    line-height: 35px;
   }
 
   #para-quem .chamada .titulo {
@@ -191,22 +192,8 @@
     padding-bottom: 94px;
   }
 
-  .pagina-inicial-lead .lead {
-    display: none;
-  }
-
-  .pagina-inicial-lead .lead-small {
-    width: inherit;
-  }
-
-  .pagina-inicial-inner .lead-small p {
-    line-height: 30px;
-  }
-}
-
-@media (max-width: 460px) {
   .hide-in-mobile {
-    display: hide;
+    display: none;
   }
 
   .show-in-mobile {
@@ -226,6 +213,10 @@
   #pagina-inicial #pagina-inicial-slider .carousel-caption {
     top: 40px;
   }
+}
+
+@media (max-width: 460px) {
+
 
   #quem-somos .chamada {
     height: 300px;
