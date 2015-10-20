@@ -653,7 +653,7 @@
           <!-- Tab panes -->
           <div class="tab-content">
             <div role="tabpanel" class="tab-pane active" id="contato">
-              <form class="form-formspree form-vertical" method="POST">
+              <form class="form-contact form-vertical" method="POST">
                 <h3 class="text-center">Entre em contato</h3>
                 <div class="messages"></div>
                 <div class="form-group">
@@ -669,16 +669,11 @@
                   <textarea class="form-control" rows="3" name="message" id="id_message" placeholder="Sua mensagem" required="required"></textarea>
                 </div>
 
-                <input type="hidden" name="_subject" value="Contato Persona" />
-                <input class="hide" type="text" name="_gotcha">
-                <input type="hidden" name="_subject" value="Subject">
-                <input type="hidden" name="_replyto" value="%email">
-
                 <button type="submit" class="btn btn-hover btn-persona btn-hover btn-persona-blue">Enviar</button>
               </form>
             </div>
             <div role="tabpanel" class="tab-pane" id="parceiros">
-              <form class="form-formspree form-vertical" method="POST">
+              <form class="form-contact form-vertical" method="POST">
                 <h3 class="text-center">Seja um parceiro</h3>
                 <div class="messages"></div>
                 <div class="form-group">
@@ -694,16 +689,11 @@
                   <textarea class="form-control" rows="3" name="message" id="id_message" placeholder="Sua mensagem" required="required"></textarea>
                 </div>
 
-                <input type="hidden" name="_subject" value="Parceiros Persona" />
-                <input class="hide" type="text" name="_gotcha">
-                <input type="hidden" name="_subject" value="Subject">
-                <input type="hidden" name="_replyto" value="%email">
-
                 <button type="submit" class="btn btn-hover btn-persona btn-hover btn-persona-blue">Enviar</button>
               </form>
             </div>
             <div role="tabpanel" class="tab-pane" id="recrutamento">
-              <form class="form-formspree form-vertical" method="POST">
+              <form class="form-contact form-vertical" method="POST">
                 <h3 class="text-center">Trabalhe conosco</h3>
                 <div class="messages"></div>
                 <div class="form-group">
@@ -721,11 +711,6 @@
                 <div class="form-group">
                   <textarea class="form-control" rows="3" name="message" id="id_message" placeholder="Sua mensagem" required="required"></textarea>
                 </div>
-
-                <input type="hidden" name="_subject" value="Regrutamento Persona" />
-                <input class="hide" type="text" name="_gotcha">
-                <input type="hidden" name="_subject" value="Subject">
-                <input type="hidden" name="_replyto" value="%email">
 
                 <button type="submit" class="btn btn-hover btn-persona btn-hover btn-persona-blue">Enviar</button>
               </form>
@@ -747,10 +732,19 @@
     <!-- Bootstrap Core JS -->
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 
+    <!-- Mustache JS -->
+    <script type="text/javascript" src="js/mustache.js"></script>
+
     <!-- Parallax JS -->
     <script type="text/javascript" src="js/jquery-momentum-scroll.js"></script>
 
     <!-- Landing page -->
     <script type="text/javascript" src="js/landing-page.js"></script>
+
+    <!-- Mustache Templates -->
+    <script id="email-template" type="text/html">
+      <h3>Mensagem de {{ name }} <{{ email }}></h3>
+      <p>{{ message }}</p>
+    </script>
   </body>
 </html>

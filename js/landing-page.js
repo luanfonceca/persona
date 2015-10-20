@@ -6,32 +6,81 @@ var MESSAGE = '' +
     '{{ message }}' +
   '</div>';
 
-$(function() {
-  $('.form-formspree').submit(function(e) {
-    e.preventDefault();
+function sendEmail(email, name, subject, message, attachments){
+  var attachments = attachments || [];
+  var to_email = 'luanfonceca@gmail.com';
+  var to_name = 'luan Fonseca';
 
+  $.ajax({
+    type: 'POST',
+    url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+    data: {
+      'key': 'B9Ny1dKD1C2b_YZH-yT8TA',
+      'message': {
+        'from_email': email,
+        'from_name': name,
+        'headers': {
+          'Reply-To': email
+        },
+        'subject': subject,
+        'html': message,
+        'auto_text': true,
+        'to': [
+          {
+            'email': to_email,
+            'name': to_name,
+            'type': 'to'
+          }
+        ],
+        'attachments': attachments
+      },
+    }
+  })
+  .done(function(response) {
+    alert('We have sent your message!');
+  })
+  .fail(function(response) {
+    alert('We were unable to send the message.');
+  });
+}
+
+$(function() {
+  $('.form-contact').submit(function(e) {
+    e.preventDefault();
     var self = $(this);
-    self.find('.messages').html('');
-    $.ajax({
-      url: '//flipmail.co/api/J3d2zZdpiouOTUIi3vTi',
-      method: 'POST',
-      headers: {
-        'Accept': 'application/json',
-        'Content-Type': 'application/x-www-form-urlencoded'
-      },
-      data: self.serialize(),
-      dataType: 'json',
-      success: function(data) {
-        var success = MESSAGE.replace('{{ status }}', 'success');
-        success = success.replace('{{ message }}', 'Email enviado com sucesso, obrigado');
-        self.find('.messages').html(success);
-      },
-      error: function(err) {
-        var error = MESSAGE.replace('{{ status }}', 'danger');
-        error = error.replace('{{ message }}', 'deu errado');
-        self.find('.messages').html(error);
-      }
+
+    var subject = undefined;
+    var attachment = {};
+    var email = $('#email').val();
+    var name = $('#name').val();
+    var message = Mustache.to_html($('#email-template').html(), {
+      'name': name,
+      'email': email,
+      'message': $('#message').val()
     });
+
+    if (self.parents('#contato').length) {
+      subject = 'Contato Persona';
+    } else if (self.parents('#parceiros').length) {
+      subject = 'Parceiros Persona';
+    } else if (self.parents('#recrutamento').length) {
+      subject = 'Regrutamento Persona';
+    }
+
+    if($('#attachment').val()){
+      var file = $('#attachment')[0].files[0];
+      attachment.name = file.name;
+      attachment.type = file.type;
+
+      var reader = new FileReader();
+      reader.onload = function(event) {
+        attachment.content = btoa(event.target.result);
+        sendEmail(email, name, message, [attachment]);
+      }
+      reader.readAsBinaryString(file);
+    } else {
+      sendEmail(email, name, message);
+    }
   });
 
   // Animations
