@@ -655,7 +655,7 @@
             <div role="tabpanel" class="tab-pane active" id="contato">
               <form class="form-contact form-vertical" method="POST">
                 <h3 class="text-center">Entre em contato</h3>
-                <div class="messages"></div>
+                <div class="form-feedback hide"></div>
                 <div class="form-group">
                   <input type="texto" class="form-control" name="name" id="id_name" placeholder="Seu nome" required="required">
                 </div>
@@ -668,14 +668,15 @@
                 <div class="form-group">
                   <textarea class="form-control" rows="3" name="message" id="id_message" placeholder="Sua mensagem" required="required"></textarea>
                 </div>
-
-                <button type="submit" class="btn btn-hover btn-persona btn-hover btn-persona-blue">Enviar</button>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-hover btn-persona btn-hover btn-persona-blue">Enviar</button>
+                </div>
               </form>
             </div>
             <div role="tabpanel" class="tab-pane" id="parceiros">
               <form class="form-contact form-vertical" method="POST">
                 <h3 class="text-center">Seja um parceiro</h3>
-                <div class="messages"></div>
+                <div class="form-feedback hide"></div>
                 <div class="form-group">
                   <input type="texto" class="form-control" name="name" id="id_name" placeholder="Seu nome" required="required">
                 </div>
@@ -688,14 +689,15 @@
                 <div class="form-group">
                   <textarea class="form-control" rows="3" name="message" id="id_message" placeholder="Sua mensagem" required="required"></textarea>
                 </div>
-
-                <button type="submit" class="btn btn-hover btn-persona btn-hover btn-persona-blue">Enviar</button>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-hover btn-persona btn-hover btn-persona-blue">Enviar</button>
+                </div>
               </form>
             </div>
             <div role="tabpanel" class="tab-pane" id="recrutamento">
               <form class="form-contact form-vertical" method="POST">
                 <h3 class="text-center">Trabalhe conosco</h3>
-                <div class="messages"></div>
+                <div class="form-feedback hide"></div>
                 <div class="form-group">
                   <input type="texto" class="form-control" name="name" id="id_name" placeholder="Seu nome" required="required">
                 </div>
@@ -712,7 +714,9 @@
                   <textarea class="form-control" rows="3" name="message" id="id_message" placeholder="Sua mensagem" required="required"></textarea>
                 </div>
 
-                <button type="submit" class="btn btn-hover btn-persona btn-hover btn-persona-blue">Enviar</button>
+                <div class="form-group">
+                  <button type="submit" class="btn btn-hover btn-persona btn-hover btn-persona-blue">Enviar</button>
+                </div>
               </form>
             </div>
           </div>
@@ -743,8 +747,25 @@
 
     <!-- Mustache Templates -->
     <script id="email-template" type="text/html">
-      <h3>Mensagem de {{ name }} <{{ email }}></h3>
+      <h3>Mensagem de "{{ name }} &lt;{{ email }}&gt; ({{ phone }})"</h3>
       <p>{{ message }}</p>
+    </script>
+
+    <script id="email-feedback-progress-bar-template" type="text/html">
+      <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+        <span>Enviando...</span>
+      </div>
+    </script>
+
+    <script id="email-feedback-message-template" type="text/html">
+      <div class="alert alert-{{ type }}">
+        <span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        &nbsp;
+        {{ message }}
+      </div>
     </script>
   </body>
 </html>

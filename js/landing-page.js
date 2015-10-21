@@ -1,15 +1,25 @@
-var EMAIL = 'luanfonceca@gmail.com';
-var MESSAGE = '' +
-  '<div class="alert alert-{{ status }}">' +
-    '<span class="glyphicon glyphicon-exclamation-sign" aria-hidden="true"></span>' +
-    '&nbsp;' +
-    '{{ message }}' +
-  '</div>';
+function showProgressbar(form) {
+  var progressbar = $('#email-feedback-progress-bar-template').html();
+  form.find('.form-feedback').addClass('active').removeClass('hide');
+  form.find('.form-feedback').html(progressbar);
+}
+
+function showMessage(type, message){
+  var message = Mustache.to_html($('#email-feedback-message-template').html(), {
+    'type': type,
+    'message': message,
+  });
+  var feedback = $('.form-feedback.active');
+  var form = feedback.parent();
+
+  feedback.removeClass('active').html(message);
+  form.find('.form-control').val('');
+}
 
 function sendEmail(email, name, subject, message, attachments){
   var attachments = attachments || [];
-  var to_email = 'luanfonceca@gmail.com';
-  var to_name = 'luan Fonseca';
+  var toEmail = 'luanfonceca@gmail.com';
+  var toName = 'luan Fonseca';
 
   $.ajax({
     type: 'POST',
@@ -27,8 +37,8 @@ function sendEmail(email, name, subject, message, attachments){
         'auto_text': true,
         'to': [
           {
-            'email': to_email,
-            'name': to_name,
+            'email': toEmail,
+            'name': toName,
             'type': 'to'
           }
         ],
@@ -37,10 +47,14 @@ function sendEmail(email, name, subject, message, attachments){
     }
   })
   .done(function(response) {
-    alert('We have sent your message!');
+    if (!response[0].reject_reason) {
+      showMessage('success', 'Mensagem enviada com sucesso!');
+    } else {
+      showMessage('danger', response[0].reject_reason);
+    }
   })
   .fail(function(response) {
-    alert('We were unable to send the message.');
+    showMessage('danger', 'Não conseguimos enviar seu Email, verifique se preencheu tudo corretamente.');
   });
 }
 
@@ -49,16 +63,17 @@ $(function() {
     e.preventDefault();
     var self = $(this);
 
-    var subject = undefined;
-    var attachment = {};
-    var email = $('#email').val();
-    var name = $('#name').val();
+    var name = self.find('[name="name"]').val();
+    var email = self.find('[name="email"]').val();
+    var phone = self.find('[name="phone"]').val();
     var message = Mustache.to_html($('#email-template').html(), {
       'name': name,
       'email': email,
-      'message': $('#message').val()
+      'phone': phone,
+      'message': self.find('[name="message"]').val(),
     });
 
+    var subject = undefined;
     if (self.parents('#contato').length) {
       subject = 'Contato Persona';
     } else if (self.parents('#parceiros').length) {
@@ -67,19 +82,22 @@ $(function() {
       subject = 'Regrutamento Persona';
     }
 
-    if($('#attachment').val()){
-      var file = $('#attachment')[0].files[0];
+    var attachment = {};
+    if(self.find('[name="attachment"]').val()){
+      var file = self.find('[name="attachment"]')[0].files[0];
       attachment.name = file.name;
       attachment.type = file.type;
 
       var reader = new FileReader();
       reader.onload = function(event) {
         attachment.content = btoa(event.target.result);
-        sendEmail(email, name, message, [attachment]);
+        showProgressbar(self);
+        sendEmail(email, name, subject, message, [attachment]);
       }
       reader.readAsBinaryString(file);
     } else {
-      sendEmail(email, name, message);
+      showProgressbar(self);
+      sendEmail(email, name, subject, message);
     }
   });
 
