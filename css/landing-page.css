@@ -595,6 +595,13 @@ q:after {
   padding-top: 0;
 }
 
+#entre-em-contato {
+  padding-top: 50px;
+  min-height: 100vh;
+  background: url(../img/entre-em-contato-bg.jpg) no-repeat center center;
+  background-size: cover;
+}
+
 #entre-em-contato .inner {
   padding-top: 60px;
 }
@@ -626,9 +633,21 @@ q:after {
   font-size: 30px;
 }
 
+#entre-em-contato .contato {
+  color: #6965c0;
+}
+
+#entre-em-contato hr {
+  border-color: #40349d;
+}
+
 #entre-em-contato blockquote {
   border-left-color: #40349d;
   font-size: 14px;
+  color: #fff;
+  text-align: left;
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 #entre-em-contato #entre-em-contato-fone {
@@ -644,16 +663,15 @@ q:after {
 }
 
 #entre-em-contato #nav-tabs-contato a {
-  color: #40349d;
-  border: 1px solid #e1e1e1;
+  color: #fff;
+  border: 3px solid #3b3789;
+  border-radius: 25px;
 }
 
-#entre-em-contato #nav-tabs-contato .active a {
-  border-bottom: none;
-}
-
-#entre-em-contato #nav-tabs-contato li:not(:first-of-type) a {
-  border-left: none;
+.nav-tabs .active > a,
+.nav > li > a:focus,
+.nav > li > a:hover {
+  background-color: #3b3789 !important;
 }
 
 #entre-em-contato #formularios-contato h3 {
@@ -661,14 +679,41 @@ q:after {
   margin-top: 0px;
 }
 
+#entre-em-contato #formularios-contato .form-control {
+  background-color: transparent;
+  border-width: 2px;
+  border-radius: 20px;
+  color: #fff;
+}
 
+#entre-em-contato #formularios-contato ::-webkit-input-placeholder{
+  color: #fff !important;
+}
+
+#entre-em-contato #formularios-contato :-moz-placeholder{
+  color: #fff !important;
+}
+
+#entre-em-contato #formularios-contato ::-moz-placeholder{
+  color: #fff !important;
+}
+
+#entre-em-contato #formularios-contato :-ms-input-placeholder {  
+  color: #fff !important;
+}
+
+/*
 #entre-em-contato #nav-tabs-contato a,
 #entre-em-contato #contato input, textarea {
   border-radius: 0;
-}
+}*/
 
 #entre-em-contato #contato textarea {
   resize: vertical;
+}
+
+#entre-em-contato #formularios-contato button {
+  border-radius: 25px;
 }
 
 .btn-persona-blue {
