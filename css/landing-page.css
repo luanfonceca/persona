@@ -36,16 +36,17 @@ p {
 }
 
 .titulo {
-  color: #343f79;
+  color: #fff;
   text-transform: uppercase;
   font-size: 50px;
-  letter-spacing: 0.2em; 
+  letter-spacing: 0.1em; 
 }
 
 .sub-titulo {
-  color: #343f79;
+  color: #fff;
   font-style: italic;
   margin-top: 20px;
+  letter-spacing: 0.1em;
 }
 
 .semibold {
