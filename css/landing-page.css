@@ -23,6 +23,16 @@ p {
   line-height: 25px;
 }
 
+q {
+  quotes: “;
+}
+q:before {
+    content: open-quote;
+}
+q:after {
+    content: close-quote;
+}
+
 .no-margin {
   margin: 0;
 }
