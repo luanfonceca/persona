@@ -67,6 +67,19 @@ p {
   transition: all 0.6s;
 }
 
+#btn-pagina-inicial {
+  border: 1px solid #fff;
+  height: 40px;
+  width: 40px;
+}
+
+#btn-pagina-inicial i {
+  position: relative;
+  bottom: 10px;
+  right: 3px;
+  font-size: 15px;
+}
+
 .pagina-inicial {
   text-align: center;
   color: #f8f8f8;
