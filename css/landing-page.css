@@ -587,6 +587,26 @@ q:after {
   background-size: cover;
 }
 
+#para-quem #clientes #activesoft {
+  background: url(../img/clientes/activesoft.png) no-repeat center center;
+  background-size: cover;
+}
+
+#para-quem #clientes #br-motos {
+  background: url(../img/clientes/br-motos.png) no-repeat center center;
+  background-size: cover;
+}
+
+#para-quem #clientes #cardume {
+  background: url(../img/clientes/cardume.png) no-repeat center center;
+  background-size: cover;
+}
+
+#para-quem #clientes #natal-pneus {
+  background: url(../img/clientes/natal-pneus.png) no-repeat center center;
+  background-size: cover;
+}
+
 #depoimentos {
   padding-bottom: 0px;
 }

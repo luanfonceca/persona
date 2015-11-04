@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">  
+</head>
+<body>
+  <form class="form-horizontal" id="contact_form">
+    <fieldset>
+      <!-- Form Name -->
+      <legend>Contact Us</legend>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="name">Name</label>  
+        <div class="col-md-5">
+          <input id="name" name="name" type="text" placeholder="Enter your full name here" class="form-control input-md" required="">    
+        </div>
+      </div>
+
+      <!-- Text input-->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="email">Email</label>  
+        <div class="col-md-5">
+          <input id="email" name="email" type="text" placeholder="Enter your email address here" class="form-control input-md" required="">
+        </div>
+      </div>
+
+      <!-- Textarea -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="message">Message</label>
+        <div class="col-md-5">
+          <textarea class="form-control" id="message" name="message" cols="6" rows="6"></textarea>
+        </div>
+      </div>
+
+      <!-- File -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="attachment">Attachment</label>
+        <div class="col-md-5">
+          <input type="file" name="attachment" id="attachment">
+        </div>
+      </div>
+
+      <!-- Button -->
+      <div class="form-group">
+        <label class="col-md-4 control-label" for="submit"></label>
+        <div class="col-md-5">
+        <button id="submit" name="submit" class="btn btn-primary">Send Message</button>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+  <script type="text/javascript" src="https://rawgit.com/jonnyreeves/jquery-Mustache/master/jquery.mustache.js"></script>
+  <script type="text/javascript" src="https://rawgit.com/janl/mustache.js/master/mustache.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+  <script id="email-template" type="text/html">
+    <h3>Mensagem de {{ name }} <{{ email }}></h3>
+    <p>{{ message }}</p>
+  </script>
+
+  <script type="text/javascript">
+    $(function($) {
+      function sendEmail(email, name, message, attachments){
+        var attachments = attachments || [];
+        var to_email = 'luanfonceca@gmail.com';
+        var to_name = 'luan Fonseca';
+        var subject = 'Website Contact Form Submission';
+
+        $.ajax({
+          type: 'POST',
+          url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+          data: {
+            'key': 'B9Ny1dKD1C2b_YZH-yT8TA',
+            'message': {
+              'from_email': email,
+              'from_name': name,
+              'headers': {
+                'Reply-To': email
+              },
+              'subject': subject,
+              'html': message,
+              'auto_text': true,
+              'to': [
+                {
+                  'email': to_email,
+                  'name': to_name,
+                  'type': 'to'
+                }
+              ],
+              'attachments': attachments
+            },
+          }
+        })
+        .done(function(response) { 
+          alert('We have sent your message!');
+        })
+        .fail(function(response) { 
+          alert('We were unable to send the message.');
+        });
+      }
+
+      $('#contact_form').submit(function() {
+        var attachment = {};
+        var email = $('#email').val();
+        var name = $('#name').val();
+        var message = Mustache.to_html($('#email-template').html(), {
+          'name': name,
+          'email': email,
+          'message': $('#message').val()
+        });
+
+        if($('#attachment').val()){
+          var file = $('#attachment')[0].files[0];
+          attachment.name = file.name;
+          attachment.type = file.type;
+
+          var reader = new FileReader();
+          reader.onload = function(event) {
+            attachment.content = btoa(event.target.result);
+            sendEmail(email, name, message, [attachment]);
+          }
+          reader.readAsBinaryString(file);
+        } else {
+          sendEmail(email, name, message);
+        }
+        return false;
+      });
+    });
+  </script>
+</body>
+</html>
