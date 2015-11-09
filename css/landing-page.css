@@ -607,6 +607,11 @@ q:after {
   background-size: cover;
 }
 
+#para-quem #clientes #instituto-do-rim {
+  background: url(../img/clientes/instituto-do-rim.png) no-repeat center center;
+  background-size: cover;
+}
+
 #depoimentos {
   padding-bottom: 0px;
 }

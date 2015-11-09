@@ -135,6 +135,12 @@ $(function() {
       $('html,body').animate({
         scrollTop: target.offset().top
       }, 1000);
+
+      if ($(this).attr('data-toggle') == 'modal') {
+        var modal = $(this).attr('data-target');
+        $(modal).modal('show');
+      }
+
       return false;
     }
   });
