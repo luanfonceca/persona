@@ -52,6 +52,31 @@
 
 }
 
+@media (max-width: 801px){
+  #depoimento-ceo .img-responsive {
+    position: relative;
+    top: 6px;
+  }
+}
+
+@media (max-width: 769px){
+  #depoimento-ceo .img-responsive {
+    top: 18px;
+  }
+}
+
+@media (max-width: 601px){
+  #depoimento-ceo .img-responsive {
+    top: 124px;
+  }
+}
+
+@media (max-width: 540px){
+  #depoimento-ceo .img-responsive {
+    top: 0;
+  }
+}
+
 @media (max-width: 769px) {
   .navbar-persona {
     /*font-size: 8px;*/
@@ -216,8 +241,6 @@
 }
 
 @media (max-width: 460px) {
-
-
   #quem-somos .chamada {
     height: 300px;
   }

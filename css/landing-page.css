@@ -359,6 +359,22 @@ q:after {
   line-height: normal;
 }
 
+#depoimento-ceo {
+  background-color: #f8f8f8;
+  min-height: 300px;
+  margin-top: 30px;
+  padding-top: 30px;
+}
+
+#depoimento-ceo .foto {
+  height: 385px;
+  position: relative;
+  bottom: 145px;
+  margin-bottom: -145px;
+  float: left;
+  margin-right: 30px;
+}
+
 #o-que-fazemos .btn-persona-inverse {
   margin: 40px auto;
 }

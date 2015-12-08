@@ -1,3 +1,4 @@
+
 function showProgressbar(form) {
   var progressbar = $('#email-feedback-progress-bar-template').html();
   form.find('.form-feedback').addClass('active').removeClass('hide');
@@ -18,8 +19,10 @@ function showMessage(type, message){
 
 function sendEmail(email, name, subject, message, attachments){
   var attachments = attachments || [];
-  var toEmail = 'luanfonceca@gmail.com';
-  var toName = 'luan Fonseca';
+  var toEmail1 = 'atendimento@personaconsult.com.br';
+  var toName1 = 'Atendimento Persona Consult';
+  var toEmail2 = 'steffano@personaconsult.com.br';
+  var toName2 = 'Stéffano Rosso Antunes';
 
   $.ajax({
     type: 'POST',
@@ -37,9 +40,14 @@ function sendEmail(email, name, subject, message, attachments){
         'auto_text': true,
         'to': [
           {
-            'email': toEmail,
-            'name': toName,
+            'email': toEmail1,
+            'name': toName1,
             'type': 'to'
+          },
+          {
+            'email': toEmail2,
+            'name': toName2,
+            'type': 'bcc'
           }
         ],
         'attachments': attachments
@@ -56,6 +64,28 @@ function sendEmail(email, name, subject, message, attachments){
   .fail(function(response) {
     showMessage('danger', 'Não conseguimos enviar seu Email, verifique se preencheu tudo corretamente.');
   });
+}
+
+function setEqualHeight(columns) {
+  var tallestColumn = 0;
+  columns.each(function() {
+    currentHeight = $(this).height();
+    if(currentHeight > tallestColumn) {
+      tallestColumn  = currentHeight;
+    }
+  });
+
+  columns.each(function() {
+    currentHeight = $(this).height();
+    difference = tallestColumn - currentHeight;
+
+    $(this).find('button').css({
+      'position': 'relative',
+      'top': difference + 'px'
+    });
+  });
+
+  $(this).height(tallestColumn);
 }
 
 $(function() {
@@ -167,4 +197,6 @@ $(function() {
       });
     }
   });
+
+  setEqualHeight($(".pilar"));
 });
