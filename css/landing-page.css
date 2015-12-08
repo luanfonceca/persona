@@ -628,6 +628,16 @@ q:after {
   background-size: cover;
 }
 
+#para-quem #clientes #c2-engenharia {
+  background: url(../img/clientes/c2-engenharia.png) no-repeat center center;
+  background-size: cover;
+}
+
+#para-quem #clientes #divino-fogao {
+  background: url(../img/clientes/divino-fogao.png) no-repeat center center;
+  background-size: cover;
+}
+
 #depoimentos {
   padding-bottom: 0px;
 }
