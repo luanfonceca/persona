@@ -638,6 +638,36 @@ q:after {
   background-size: cover;
 }
 
+#para-quem #clientes #sabor-e-arte {
+  background: url(../img/clientes/sabor-e-arte.png) no-repeat center center;
+  background-size: cover;
+}
+
+#para-quem #clientes #federal-invest {
+  background: url(../img/clientes/federal-invest.png) no-repeat center center;
+  background-size: cover;
+}
+
+#para-quem #clientes #tecnocar {
+  background: url(../img/clientes/tecnocar.png) no-repeat center center;
+  background-size: cover;
+}
+
+#para-quem #clientes #logico {
+  background: url(../img/clientes/logico.png) no-repeat center center;
+  background-size: cover;
+}
+
+#para-quem #clientes #eventt {
+  background: url(../img/clientes/eventt.png) no-repeat center center;
+  background-size: cover;
+}
+
+#para-quem #clientes #fio-de-azeite {
+  background: url(../img/clientes/fio-de-azeite.png) no-repeat center center;
+  background-size: cover;
+}
+
 #depoimentos {
   padding-bottom: 0px;
 }
