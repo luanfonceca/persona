@@ -677,6 +677,7 @@ q:after {
 }
 
 #entre-em-contato {
+  display: inline-flex;
   padding-top: 50px;
   min-height: 100vh;
   background: url(../img/entre-em-contato-bg.jpg) no-repeat center center;

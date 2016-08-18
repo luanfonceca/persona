@@ -17,51 +17,32 @@ function showMessage(type, message){
   form.find('.form-control').val('');
 }
 
-function sendEmail(email, name, subject, message, attachments){
-  var attachments = attachments || [];
-  var toEmail1 = 'atendimento@personaconsult.com.br';
-  var toName1 = 'Atendimento Persona Consult';
-  var toEmail2 = 'steffano@personaconsult.com.br';
-  var toName2 = 'Stéffano Rosso Antunes';
+// function sendEmail(email, name, subject, message, attachments){
+function sendEmail(data){
+  var toEmail = 'luanfonceca@gmail.com';
+  var toName = 'Atendimento Persona Consult';
+  var bccEmail = '168h.com.br@gmail.com';
+  var bccName = 'Atendimento Persona Consult';
+
+  data.append('to_name', toName);
+  data.append('to_email', toEmail);
+  data.append('bcc_name', bccName);
+  data.append('bcc_email', bccEmail);
 
   $.ajax({
+    url: 'https://statical.herokuapp.com/send/',
     type: 'POST',
-    url: 'https://mandrillapp.com/api/1.0/messages/send.json',
-    data: {
-      'key': 'B9Ny1dKD1C2b_YZH-yT8TA',
-      'message': {
-        'from_email': email,
-        'from_name': name,
-        'headers': {
-          'Reply-To': email
-        },
-        'subject': subject,
-        'html': message,
-        'auto_text': true,
-        'to': [
-          {
-            'email': toEmail1,
-            'name': toName1,
-            'type': 'to'
-          },
-          {
-            'email': toEmail2,
-            'name': toName2,
-            'type': 'bcc'
-          }
-        ],
-        'attachments': attachments
-      },
-    }
-  })
-  .done(function(response) {
-    if (!response[0].reject_reason) {
+    data: data,
+    cache: false,
+    processData: false,
+    contentType: false
+  }).done(function(response) {
+    if (response.message == 'success') {
       showMessage('success', 'Mensagem enviada com sucesso!');
     } else {
-      showMessage('danger', response[0].reject_reason);
+      showMessage('danger', response.message);
     }
-  })
-  .fail(function(response) {
+  }).fail(function(response) {
     showMessage('danger', 'Não conseguimos enviar seu Email, verifique se preencheu tudo corretamente.');
   });
 }
@@ -93,6 +74,7 @@ $(function() {
     e.preventDefault();
     var self = $(this);
 
+    var data = new FormData(self[0]);
     var name = self.find('[name="name"]').val();
     var email = self.find('[name="email"]').val();
     var phone = self.find('[name="phone"]').val();
@@ -102,33 +84,10 @@ $(function() {
       'phone': phone,
       'message': self.find('[name="message"]').val(),
     });
+    data.set('message', message);
 
-    var subject = undefined;
-    if (self.parents('#contato').length) {
-      subject = 'Contato Persona';
-    } else if (self.parents('#parceiros').length) {
-      subject = 'Parceiros Persona';
-    } else if (self.parents('#recrutamento').length) {
-      subject = 'Regrutamento Persona';
-    }
-
-    var attachment = {};
-    if(self.find('[name="attachment"]').val()){
-      var file = self.find('[name="attachment"]')[0].files[0];
-      attachment.name = file.name;
-      attachment.type = file.type;
-
-      var reader = new FileReader();
-      reader.onload = function(event) {
-        attachment.content = btoa(event.target.result);
-        showProgressbar(self);
-        sendEmail(email, name, subject, message, [attachment]);
-      }
-      reader.readAsBinaryString(file);
-    } else {
-      showProgressbar(self);
-      sendEmail(email, name, subject, message);
-    }
+    showProgressbar(self);
+    sendEmail(data);
   });
 
   // Animations
